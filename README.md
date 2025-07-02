@@ -86,8 +86,7 @@ Personal portfolio to showcase my skills and projects.
 ### 📫 Contact Me
 
 - 📧 Email: [nourryahyaoui@gmail.com](mailto:nourryahyaoui@gmail.com)  
-- 📱 Phone/WhatsApp: +216 25739896  
-- 💼 Fiverr: [fiverr.com/nouryahyaoui](https://fiverr.com/nouryahyaoui)  
+- 📱 Phone/WhatsApp: +216 25739896   
 - 💻 GitHub: [github.com/nour-yahyaoui](https://github.com/nour-yahyaoui)  
 - 📍 Location: Gassrin Sbiba, Tunisia
 
