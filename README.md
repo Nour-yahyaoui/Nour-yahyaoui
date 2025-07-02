@@ -82,6 +82,13 @@ Personal portfolio to showcase my skills and projects.
 **Type:** Frontend
 
 ---
+#### 6. [ButtonCraft 🎨](https://button-gen.vercel.app/)
+Beautiful collection of ready-to-use button components with HTML/CSS and Tailwind implementations.  
+**Tech:** Next.js, Tailwind CSS, Framer Motion, TypeScript  
+**Features:** One-click copy, responsive design, visual editor (coming soon)  
+**Type:** Component Library  
+
+---
 
 ### 📫 Contact Me
 
