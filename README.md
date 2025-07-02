@@ -16,6 +16,14 @@
 
 ---
 
+### 🧰 Tech Stack
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vite,tailwind,python,github,git,vercel,supabase" />
+</p>
+
+---
+
 ### 🛠️ Skills
 
 **Frontend**
@@ -40,38 +48,38 @@
 
 ### 🚀 Featured Projects
 
-#### 1. NF-Team Project
+#### 1. [NF-Team Project](https://nf-team-pi.vercel.app/)
 Collaborative team-based fullstack development with modern UI/UX.  
 **Tech:** React, Next.js, TailwindCSS, TypeScript  
-**Status:** 🔒 Private Live Demo
+**Type:** Team Project
 
 ---
 
-#### 2. Musify 🎵
+#### 2. [Musify 🎵](https://musify-tau-sepia.vercel.app/)
 Modern music player with playlist functionality.  
 **Tech:** React, Vite, Tailwind CSS  
-**Demo:** ✅ Live | 💻 Code Available
+**Type:** Frontend Only
 
 ---
 
-#### 3. Ultra-Vuk Dashboard
+#### 3. [Ultra-Vuk Dashboard](https://ultra-vuk.vercel.app/)
 Comprehensive dashboard with weather, calendar, AI tools, school/gym tracking.  
 **Tech:** Next.js, Supabase, API/AI Integration, Auth  
-**Demo:** 🔒 Private
+**Type:** Fullstack
 
 ---
 
-#### 4. Password Generator
+#### 4. [Password Generator](https://generator-one-ecru.vercel.app/)
 Secure password generator with customization options.  
 **Tech:** JavaScript, HTML5, CSS3  
-**Demo:** ✅ Live | 💻 Code Available
+**Type:** Frontend Only
 
 ---
 
-#### 5. Django Chat App 💬
-Real-time chat using Django Channels, with multi-room support and auth.  
-**Tech:** Django, Channels, Python, SQL  
-**Demo:** ✅ Live | 💻 Code Available
+#### 5. [My Portfolio](https://nour-dusky.vercel.app/)
+Personal portfolio to showcase my skills and projects.  
+**Tech:** Next.js, Tailwind CSS  
+**Type:** Frontend
 
 ---
 
