@@ -90,6 +90,16 @@ Beautiful collection of ready-to-use button components with HTML/CSS and Tailwin
 
 ---
 
+
+### 7. [Free Portfolio Templates](portfolio-templates-store.vercel.app/)
+**Complete collection** of many portfolio templates in one package.  
+**Includes:**
+- All source code
+- Documentation 
+**Tech:** Next.js 14, TypeScript, Tailwind CSS  
+**Features:** Ready-to-deploy, fully responsive, easy to customize  
+
+
 ### 📫 Contact Me
 
 - 📧 Email: [nourryahyaoui@gmail.com](mailto:nourryahyaoui@gmail.com)  
