@@ -76,7 +76,7 @@ Secure password generator with customization options.
 
 ---
 
-#### 5. [My Portfolio](https://nour-dusky.vercel.app/)
+#### 5. [My Portfolio](https://nour-yahyaoui.vercel.app/)
 Personal portfolio to showcase my skills and projects.  
 **Tech:** Next.js, Tailwind CSS  
 **Type:** Frontend
