@@ -91,7 +91,7 @@ Beautiful collection of ready-to-use button components with HTML/CSS and Tailwin
 ---
 
 
-### 7. [Free Portfolio Templates](portfolio-templates-store.vercel.app/)
+### 7. [Free Portfolio Templates](https://portfolio-templates-store.vercel.app/)
 **Complete collection** of many portfolio templates in one package.  
 **Includes:**
 - All source code
