@@ -19,7 +19,7 @@
 ### 🧰 Tech Stack
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vite,tailwind,python,github,git,vercel,supabase" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vite,tailwind,python,github,git,vercel,neondb" />
 </p>
 
 ---
@@ -46,14 +46,3 @@
 
 ---
 
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nour-yahyaoui&show_icons=true&theme=radical" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nour-yahyaoui&layout=compact&theme=radical" width="48%" />
-</p>
-
----
-
-<p align="center">
-  🔥 “Code is like humor. When you have to explain it, it’s bad.” – Cory House
-</p>
