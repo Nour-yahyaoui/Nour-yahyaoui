@@ -10,7 +10,7 @@
 ### 👨‍💻 About Me
 
 🎓 I'm an 18-year-old web developer currently studying at **Monji Slim Secondary School** in **Gassrin Sbiba, Tunisia**.  
-💻 With over **2 years of experience**, I've completed **10+ projects** ranging from frontend websites to fullstack applications.  
+💻 With over **2 years of experience**, I've completed **20+ projects** ranging from frontend websites to fullstack applications.  
 🚀 I’m passionate about solving real-world problems with clean, scalable code and intuitive design.  
 🎯 My goal is to build impactful digital products and continue leveling up my skills every day.
 
