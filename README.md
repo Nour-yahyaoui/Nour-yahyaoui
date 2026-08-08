@@ -41,6 +41,7 @@
 - Express.js
 - PHP
 - REST APIs
+- websocket
 - PostgreSQL
 - Supabase / Neon DB
 
