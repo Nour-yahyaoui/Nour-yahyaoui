@@ -1,3 +1,4 @@
+
 <h1 align="center">Hi 👋, I'm Nour Yahyaoui</h1>
 <h3 align="center">Full-Stack Web & Mobile Developer from Tunisia 🇹🇳</h3>
 
@@ -17,7 +18,9 @@
 ### 🧰 Tech Stack
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vite,tailwind,nodejs,express,python,php,postgresql,reactnative,github,git,vercel,supabase" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vite,tailwind,nodejs,express,python,php,postgresql,github,git,vercel,supabase" />
+  <br>
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
 </p>
 
 ---
@@ -77,19 +80,6 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=nour-yahyaoui&show_icons=true&theme=radical" alt="GitHub Stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nour-yahyaoui&layout=compact&theme=radical" alt="Top Languages" />
-</p>
-
----
-
-### 📫 Connect With Me
-
-<p align="left">
-  <a href="https://linkedin.com/in/nour-yahyaoui" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" />
-  </a>
-  <a href="https://github.com/nour-yahyaoui" target="_blank">
-    <img src="https://skillicons.dev/icons?i=github" />
-  </a>
 </p>
 
 ---
