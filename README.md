@@ -11,7 +11,7 @@
 ### 👨‍💻 About Me
 
 🎓 I'm a **19-year-old** full-stack developer from Tunisia.  
-💻 With over **4 years of experience**, I've completed **40+ projects** ranging from frontend websites to fullstack applications, mobile apps, and enterprise-level solutions.
+💻 With over **3 years of experience**, I've completed **40+ projects** ranging from frontend websites to fullstack applications, mobile apps, and enterprise-level solutions.
 
 ---
 
@@ -70,20 +70,12 @@
 ### 🏆 Projects & Achievements
 
 - **40+** completed projects
-- **4+ years** of professional development experience
+- **3+ years** of professional development experience
 - Built solutions for clients across multiple industries
 - Specialized in creating responsive, high-performance applications
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nour-yahyaoui&show_icons=true&theme=radical" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nour-yahyaoui&layout=compact&theme=radical" alt="Top Languages" />
-</p>
-
----
 
 <p align="center">
   <i>"Building the future, one line of code at a time."</i>
