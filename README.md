@@ -56,27 +56,19 @@
 
 ### 📌 What I've Actually Shipped
 
-<!--
-Replace each line below with ONE real, specific project — name it, say what it does,
-and link the repo. This section is what recruiters actually read. Specific beats vague.
-
-Example format:
-- **[Project Name](link)** — one-line description of the real problem it solves and the stack used.
--->
-
-- **[Project Name](link)** — short description of what it does and why it's technically interesting.
-- **[Project Name](link)** — short description of what it does and why it's technically interesting.
-- **[Project Name](link)** — short description of what it does and why it's technically interesting.
-
----
-
-### 📚 Currently Learning
-
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+- **[Matjari](link)** — full-stack store management platform (web + mobile) covering sales, stock/inventory, and employee management for retail businesses. End-to-end system design across multiple client-facing surfaces, not just a CRUD demo.
+- **[Grafspee](link)** — free open-source React template library with 60+ ready-to-use components, built so other developers can drop production-ready UI into their own projects without starting from scratch.
+- **[env-sentry](link)** — Python library that catches `.env` drift and hardcoded secrets before they ship, built to solve a real security gap most teams handle manually or not at all.
 
 ---
 
 
+### 📫 Let's Connect
+
+📧 [nourryahyaoui@gmail.com](mailto:nourryahyaoui@gmail.com)
+<!-- Add your LinkedIn / portfolio links here too — a recruiter who lands on your profile should be one click from reaching you -->
+
+---
 
 <p align="center">
   <i>"Building the future, one line of code at a time."</i>
