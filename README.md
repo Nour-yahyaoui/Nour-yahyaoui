@@ -55,15 +55,6 @@
 
 ---
 
-### 📌 What I've Actually Shipped
-
-- **[Matjari](link)** — full-stack store management platform (web + mobile) covering sales, stock/inventory, and employee management for retail businesses. End-to-end system design across multiple client-facing surfaces, not just a CRUD demo.
-- **[Grafspee](link)** — free open-source React template library with 60+ ready-to-use components, built so other developers can drop production-ready UI into their own projects without starting from scratch.
-- **[env-sentry](link)** — Python library that catches `.env` drift and hardcoded secrets before they ship, built to solve a real security gap most teams handle manually or not at all.
-
----
-
-
 ### 📫 Let's Connect
 
 📧 [nourryahyaoui@gmail.com](mailto:nourryahyaoui@gmail.com)
