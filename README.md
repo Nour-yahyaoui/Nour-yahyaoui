@@ -1,4 +1,5 @@
 <h1 align="center">Hiiiii 👋, I'm Nour Yahyaoui</h1>
+[![committers.top badge](https://user-badge.committers.top/tunisia/nour-yahyaoui.svg)](https://user-badge.committers.top/tunisia/nour-yahyaoui)
 <h3 align="center">Full-Stack Developer specializing in React/Next.js, Node.js & PostgreSQL — from Tunisia 🇹🇳</h3>
 
 <p align="center">
