@@ -67,7 +67,6 @@ I began my coding journey with Python and web development fundamentals, and I've
 *Cross-platform desktop applications*
 
 ![Python](https://img.shields.io/badge/Python_(Tkinter/PyQt)-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java_(Swing/JavaFX)-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 
 #### 🔄 State Management
 *Efficient state management for complex applications*
