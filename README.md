@@ -1,6 +1,12 @@
 <h1 align="center">Hiiiii 👋, I'm Nour Yahyaoui</h1>
-[![committers.top badge](https://user-badge.committers.top/tunisia/nour-yahyaoui.svg)](https://user-badge.committers.top/tunisia/nour-yahyaoui)
-<h3 align="center">Full-Stack Developer specializing in React/Next.js, Node.js & PostgreSQL — from Tunisia 🇹🇳</h3>
+
+<p align="center">
+  <a href="https://user-badge.committers.top/tunisia/nour-yahyaoui">
+    <img src="https://user-badge.committers.top/tunisia/nour-yahyaoui.svg" alt="Top GitHub User in Tunisia" />
+  </a>
+</p>
+
+<h3 align="center">Full-Stack AI Engineer specializing in React/Next.js, Node.js, Rust & PostgreSQL — from Tunisia 🇹🇳</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=nour-yahyaoui&label=Profile%20views&color=0e75b6&style=flat" alt="nour-yahyaoui" />
@@ -10,10 +16,23 @@
 
 ### 👨‍💻 About Me
 
-🎓 19-year-old full-stack developer from Tunisia, **3 years of freelance/client experience**.
+🏆 **Top 3 most active GitHub user in Tunisia** (11,800+ contributions in the last year).
+🎓 19-year-old full-stack developer from Tunisia with **3 years of freelance/client experience**.
 💻 I build production web apps end-to-end — frontend, backend, and deployment — and I'm currently expanding into **Rust (Actix Web / Axum)** to work on performance-critical backend services.
 
 📌 Check my pinned repos below for what I actually build — that's a better signal than any project count.
+
+---
+
+### 🏆 Rankings & Achievements
+
+<div align="center">
+  <a href="https://user-badge.committers.top/tunisia/nour-yahyaoui">
+    <img src="https://user-badge.committers.top/tunisia/nour-yahyaoui.svg" alt="Tunisia Rank" height="40" />
+  </a>
+  <br/><br/>
+  <i>Ranked #3 on GitHub in Tunisia by total contributions (11,963 in the last year)</i>
+</div>
 
 ---
 
@@ -44,7 +63,6 @@
 ![Neon DB](https://img.shields.io/badge/Neon-00BFFF?style=for-the-badge&logo=neon&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-
 #### 🛠️ Tools & Others
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -53,13 +71,14 @@
 ![CLI](https://img.shields.io/badge/CLI-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
-
 ---
 
 ### 📫 Let's Connect
 
-📧 [nourryahyaoui@gmail.com](mailto:nourryahyaoui@gmail.com)
-<!-- Add your LinkedIn / portfolio links here too — a recruiter who lands on your profile should be one click from reaching you -->
+📧 [nourryahyaoui@gmail.com](mailto:nourryahyaoui@gmail.com)  
+🔗 [Portfolio Website](https://nour-yahyaoui.vercel.app)  
+💼 [LinkedIn](https://linkedin.com/in/nour-yahyaoui) <!-- REPLACE THIS WITH YOUR ACTUAL LINKEDIN URL -->
+🐦 [Twitter/X](https://x.com/nourryahyaoui) <!-- REPLACE THIS WITH YOUR ACTUAL TWITTER URL -->
 
 ---
 
