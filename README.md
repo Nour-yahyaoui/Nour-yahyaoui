@@ -1,5 +1,7 @@
 <h1 align="center">Hiiiii 👋, I'm Nour Yahyaoui</h1>
 
+[![Top Committer](https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026)](https://www.star-history.com/nour-yahyaoui)
+
 ### 👨‍💻 About Me
 
 🎓 19-year-old full-stack developer from Tunisia with **3 years of freelance/client experience**.
