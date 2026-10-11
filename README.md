@@ -2,6 +2,8 @@
 
 [![Top Committer](https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026)](https://www.star-history.com/nour-yahyaoui)
 
+[![committers.top badge](https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg)](https://user-badge.committers.top/tunisia/Nour-yahyaoui)
+
 ### 👨‍💻 About Me
 
 🎓 19-year-old full-stack developer from Tunisia with **3 years of freelance/client experience**.
