@@ -102,13 +102,13 @@ I prioritize security in every project. From implementing rate limiting and CSRF
 
 📧 [nourryahyaoui@gmail.com](mailto:nourryahyaoui@gmail.com)  
 🔗 [Portfolio Website](https://nour-yahyaoui.vercel.app)  
-💼 [LinkedIn](https://linkedin.com/in/nour-yahyaoui) <!-- REPLACE THIS WITH YOUR ACTUAL LINKEDIN URL -->
-🐦 [Twitter/X](https://x.com/nourryahyaoui) <!-- REPLACE THIS WITH YOUR ACTUAL TWITTER URL -->
 
 ---
 
+
+
 <p align="center">
-  <i>"Building the future, one line of code at a time."</i>
+  <i>"AI power with the perfect leadership"</i>
   <br>
   © 2026 Nour Yahyaoui. All rights reserved.
 </p>
