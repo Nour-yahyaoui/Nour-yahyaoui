@@ -1,5 +1,9 @@
 <h1 align="center">Hiiiii 👋, I'm Nour Yahyaoui</h1>
 
+<p align="center">
+  <i>"AI power with the perfect leadership"</i>
+</p>
+
 [![Top Committer](https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026)](https://www.star-history.com/nour-yahyaoui)
 
 
@@ -12,6 +16,22 @@
 I began my coding journey with Python and web development fundamentals, and I've since progressed through JavaScript, React, and modern full-stack development with Next.js, React Native, and serverless architectures. I build production web apps end-to-end — frontend, backend, and deployment — and I'm currently expanding into **Rust (Actix Web / Axum)** to work on performance-critical backend services. What drives me is creating secure, scalable applications that solve real problems.
 
 📌 Check my pinned repos below for what I actually build — that's a better signal than any project count.
+
+---
+
+### 🚀 Featured Project: VexOS Desktop
+
+[![Version](https://img.shields.io/badge/version-2.2.1-E95420?style=for-the-badge)](https://github.com/Nour-yahyaoui/vexos/releases)
+[![Debian](https://img.shields.io/badge/Debian-trixie-A81D33?style=for-the-badge&logo=debian&logoColor=white)](https://github.com/Nour-yahyaoui/vexos)
+[![Status](https://img.shields.io/badge/status-release_candidate-orange?style=for-the-badge)](https://github.com/Nour-yahyaoui/vexos)
+
+**VexOS Desktop** is a live Linux desktop built from Debian trixie for web and software development. Boot one ISO in VirtualBox and you get XFCE, Firefox ESR, Python 3, Node.js with npm, Rust with cargo, gcc, git, and **VexOS DevStudio**: a browser-based IDE with a code editor, a Run button, a live preview, and an AI assistant that uses your own Groq key, which stays on your machine.
+
+- **Built from source:** the image is made with live-build, and every package list is a plain text file in the repo.
+- **Clean by design:** the live session runs in RAM, so a reboot restores the system to its starting state.
+- **Ready to code:** the compilers, runtimes, and the IDE are already set up when it boots.
+
+🔗 [Source and downloads](https://github.com/Nour-yahyaoui/vexos) · [Website](https://vexos-omega.vercel.app) · [Documentation](https://vexos-omega.vercel.app/docs/)
 
 ---
 
@@ -55,6 +75,7 @@ I began my coding journey with Python and web development fundamentals, and I've
 *Cross-platform desktop applications*
 
 ![Python](https://img.shields.io/badge/Python_(Tkinter/PyQt)-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux_(Debian)-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 #### 🔄 State Management
 *Efficient state management for complex applications*
@@ -85,6 +106,8 @@ I began my coding journey with Python and web development fundamentals, and I've
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![live-build](https://img.shields.io/badge/live--build-555555?style=for-the-badge&logo=linux&logoColor=white)
 ![CLI](https://img.shields.io/badge/CLI-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
@@ -105,10 +128,6 @@ I prioritize security in every project. From implementing rate limiting and CSRF
 
 ---
 
-
-
 <p align="center">
-  <i>"AI power with the perfect leadership"</i>
-  <br>
   © 2026 Nour Yahyaoui. All rights reserved.
 </p>
