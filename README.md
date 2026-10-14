@@ -13,7 +13,7 @@
 💻 I craft beautiful, secure, and scalable applications with modern technologies. From web and mobile to desktop, I turn complex problems into elegant solutions.
 
 **My Journey:**
-I began my coding journey with Python and web development fundamentals, and I've since progressed through JavaScript, React, and modern full-stack development with Next.js, React Native, and serverless architectures. I build production web apps end-to-end — frontend, backend, and deployment — and I'm currently expanding into **Rust (Actix Web / Axum)** to work on performance-critical backend services. What drives me is creating secure, scalable applications that solve real problems.
+I began my coding journey with Python and web development fundamentals, and I've since progressed through JavaScript, React, and modern full-stack development with Next.js, React Native, and serverless architectures. I build production web apps end-to-end — frontend, backend, and deployment — and I'm currently expanding into **Rust (Actix Web / Axum)** to work on performance-critical backend services. What drives me is creating secure, scalable applications that solve real problems. Lately that also means building my own tooling: **nour-code**, a local AI coding agent that runs Qwen3 8B on Ollama and gives it audited, permission-checked access to real tools.
 
 📌 Check my pinned repos below for what I actually build — that's a better signal than any project count.
 
@@ -32,6 +32,25 @@ I began my coding journey with Python and web development fundamentals, and I've
 - **Ready to code:** the compilers, runtimes, and the IDE are already set up when it boots.
 
 🔗 [Source and downloads](https://github.com/Nour-yahyaoui/vexos) · [Website](https://vexos-omega.vercel.app) · [Documentation](https://vexos-omega.vercel.app/docs/)
+
+---
+
+### 🤖 Featured Project: nour-code
+
+[![Version](https://img.shields.io/badge/version-1.0.0-3776AB?style=for-the-badge)](https://github.com/Nour-yahyaoui/nour-code)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
+[![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
+[![Tests](https://img.shields.io/badge/tests-265_passing-2EA44F?style=for-the-badge&logo=pytest&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
+
+**nour-code** is a production-grade **local** AI coding agent. It puts a **Qwen3 8B** model running on [Ollama](https://ollama.com) behind a FastAPI server and gives it *controlled* access to your filesystem, your shell and an extensible set of Python **skills**. Nothing leaves your machine except the traffic you explicitly allow.
+
+- **Real tools, real guardrails:** `read_file`, `write_file`, `list_directory`, `search_files`, `run_shell`, `apply_patch`, `delete_file` — every path is validated against `permissions.yaml`, symlink escapes are rejected, shell commands run against an allow/deny list with timeouts, and every call is written to a JSONL audit trail.
+- **Hot-reloadable skills:** drop a Python file into the skills directory (or `POST /skills/reload`) and its tools join the model's tool list. Two ship in the box — `security_skill` (secret scanning, dangerous patterns, dependency CVEs) and `production_skill` (logging, error handling, input validation, Dockerfile, CI pipeline).
+- **Production-Ready Mode:** ask to *"make it production ready"* and the agent hardens every file it touches, refuses to hand back TODO stubs, and appends a readiness checklist.
+- **Built like a service, not a script:** SSE token streaming, 2-hour sessions that survive restarts, rotating JSON logs, optional Prometheus metrics, async I/O end to end, and a 265-test offline suite.
+
+🔗 [Source and documentation](https://github.com/Nour-yahyaoui/nour-code)
 
 ---
 
@@ -63,6 +82,17 @@ I began my coding journey with Python and web development fundamentals, and I've
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Neon DB](https://img.shields.io/badge/Neon-00BFFF?style=for-the-badge&logo=neon&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+
+#### 🤖 AI & Agents
+*Local inference, tool-using agents and the guardrails around them*
+
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![Qwen](https://img.shields.io/badge/Qwen3-615CED?style=for-the-badge&logo=alibabacloud&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![SSE](https://img.shields.io/badge/SSE_streaming-0A0A0A?style=for-the-badge&logo=sse&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+![Ruff](https://img.shields.io/badge/Ruff-D7FF64?style=for-the-badge&logo=ruff&logoColor=black)
 
 #### 📱 Mobile
 *Native and cross-platform mobile applications*
@@ -117,7 +147,7 @@ I began my coding journey with Python and web development fundamentals, and I've
 
 I prioritize security in every project. From implementing rate limiting and CSRF protection to preventing XSS and SQL injection attacks. My code follows SOLID principles and clean architecture patterns, ensuring maintainable, scalable, and secure applications.
 
-🛡️ Rate Limiting | 🛡️ XSS Prevention | 🛡️ CSRF Protection | 🛡️ SQL Injection Prevention | 🛡️ JWT Authentication
+🛡️ Rate Limiting | 🛡️ XSS Prevention | 🛡️ CSRF Protection | 🛡️ SQL Injection Prevention | 🛡️ JWT Authentication | 🛡️ Path Traversal Protection | 🛡️ Sandboxed Shell Execution | 🛡️ Secret Scanning
 
 ---
 
