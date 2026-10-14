@@ -37,7 +37,7 @@ I began my coding journey with Python and web development fundamentals, and I've
 
 ### 🤖 Featured Project: nour-code
 
-[![Version](https://img.shields.io/badge/version-1.0.0-3776AB?style=for-the-badge)](https://github.com/Nour-yahyaoui/nour-code)
+[![Version](https://img.shields.io/badge/version-1.3.0-3776AB?style=for-the-badge)](https://github.com/Nour-yahyaoui/nour-code)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
