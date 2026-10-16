@@ -19,6 +19,24 @@ I began my coding journey with Python and web development fundamentals, and I've
 
 ---
 
+### 📊 GitHub Stats
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Nour-yahyaoui&commits_year=2026&show_icons=true&theme=radical" alt="Nour's GitHub stats" />
+  <img height="170" src="https://streak-stats.demolab.com?user=Nour-yahyaoui&theme=radical&timezone=Africa%2FTunis" alt="GitHub contribution streak" />
+</p>
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nour-yahyaoui&layout=compact&langs_count=6&theme=radical" alt="Most used languages" />
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Nour-yahyaoui&theme=radical&utcOffset=1" alt="Commits by hour of day" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Nour-yahyaoui&theme=radical" alt="GitHub trophies" />
+</p>
+
+---
+
 ### 🚀 Featured Project: VexOS Desktop
 
 [![Version](https://img.shields.io/badge/version-2.2.1-E95420?style=for-the-badge)](https://github.com/Nour-yahyaoui/vexos/releases)
