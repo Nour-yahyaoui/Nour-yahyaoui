@@ -4,8 +4,20 @@
   <i>"AI power with the perfect leadership"</i>
 </p>
 
-[![Top Committer](https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026)](https://www.star-history.com/nour-yahyaoui)
+<div align="center">
+  <p>
+    <a href="https://user-badge.committers.top/tunisia/Nour-yahyaoui">
+      <img src="https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" alt="committers.top Tunisia badge" />
+    </a>
+  </p>
+  <p>
+    <a href="https://www.star-history.com/nour-yahyaoui">
+      <img src="https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" alt="Top Committer 2026" />
+    </a>
+  </p>
+</div>
 
+---
 
 ### 👨‍💻 About Me
 
@@ -13,13 +25,13 @@
 💻 I craft beautiful, secure, and scalable applications with modern technologies. From web and mobile to desktop, I turn complex problems into elegant solutions.
 
 **My Journey:**
-I began my coding journey with Python and web development fundamentals, and I've since progressed through JavaScript, React, and modern full-stack development with Next.js, React Native, and serverless architectures. I build production web apps end-to-end — frontend, backend, and deployment — and I'm currently expanding into **Rust (Actix Web / Axum)** to work on performance-critical backend services. What drives me is creating secure, scalable applications that solve real problems. Lately that also means building my own tooling: **nour-code**, a local AI coding agent that runs Qwen3 8B on Ollama and gives it audited, permission-checked access to real tools.
+I began my coding journey with Python and web development fundamentals, and I've since progressed through JavaScript, React, and modern full-stack development with Next.js, React Native, and serverless architectures. I build production web apps end-to-end — frontend, backend, and deployment — and I'm currently expanding into **Rust (Actix Web / Axum & native systems)** to build performance-critical backend services and desktop software. What drives me is creating secure, scalable applications that solve real problems. Lately that also means building my own tooling from scratch: **RustPad**, a 3.16 MB zero-dependency pure-Rust desktop Word & PDF studio, and **nour-code**, a local AI coding agent that runs Qwen3 8B on Ollama and gives it audited, permission-checked access to real tools.
 
 📌 Check my pinned repos below for what I actually build — that's a better signal than any project count.
 
 ---
 
-### 📊 GitHub Stats
+### 📊 GitHub Stats & Rankings
 
 <p align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=Nour-yahyaoui&commits_year=2026&show_icons=true&theme=radical" alt="Nour's GitHub stats" />
@@ -34,6 +46,24 @@ I began my coding journey with Python and web development fundamentals, and I've
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Nour-yahyaoui&theme=radical" alt="GitHub trophies" />
 </p>
+
+---
+
+### 📄 Featured Project: RustPad
+
+[![Version](https://img.shields.io/badge/version-1.2.0-DEA584?style=for-the-badge)](https://github.com/Nour-yahyaoui/rustpad/releases/tag/v1.2.0)
+[![Rust](https://img.shields.io/badge/Rust-100%25_pure-000000?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/Nour-yahyaoui/rustpad)
+[![Windows](https://img.shields.io/badge/Windows-3.16_MB_.exe-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Nour-yahyaoui/rustpad/releases/download/v1.2.0/rustpad-v1.2.0-windows-x86_64.exe)
+[![Linux](https://img.shields.io/badge/Linux-3.18_MB_x64-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/Nour-yahyaoui/rustpad/releases/download/v1.2.0/rustpad-v1.2.0-linux-x86_64)
+[![Dependencies](https://img.shields.io/badge/crates.io_deps-0-2EA44F?style=for-the-badge)](https://github.com/Nour-yahyaoui/rustpad)
+
+**RustPad** is a native desktop Microsoft Word (`.docx`) and vector PDF (`.pdf`) studio written in **14,280 lines of zero-dependency Rust** across 9 workspace crates. Instead of shipping a 400 MB Chromium/WebView wrapper, it compiles its own DEFLATE/PKZIP archiver, ECMA-376 OpenXML engine, ISO 32000 PDF 1.7 engine, TrueType glyph rasterizer, and native Win32/X11 window backend into a single **3.16 MB** standalone executable that cold-starts in under 100 ms.
+
+- **Full `.docx` & `.pdf` studio in one binary:** paginated A4/Letter Word authoring (headings, lists, tables, images, find/replace, starter templates), inline vector PDF text editing, highlights, sticky notes, freehand ink signatures, true text-purging redaction, page merge/split/rotate, and a 50/50 split workspace with a 49-action `Ctrl+K` command palette.
+- **Zero `crates.io` dependencies, air-gapped builds:** all 9 crates (`rustpad_zip`, `docx_io`, `pdf_create`, `pdf_engine`, `doc_model`, `power_tools`, `rustpad_render`, `rustpad_window`, `app`) build and pass tests completely offline with standard `rustc` + `cargo` — loading `libX11.so.6` dynamically on Linux and linking Win32 `user32`/`gdi32`/`comdlg32` directly on Windows.
+- **Headless CLI & local Time-Machine:** run `rustpad convert`, `inspect`, `merge`, and `ocr` in CI or scripts without a display server, while interactive sessions keep compressed local snapshots for instant version rollback with zero telemetry or cloud accounts.
+
+🔗 [Source and releases](https://github.com/Nour-yahyaoui/rustpad) · [Live showcase](https://rustpad-studio.vercel.app) · [Windows `.exe` (3.16 MB)](https://github.com/Nour-yahyaoui/rustpad/releases/download/v1.2.0/rustpad-v1.2.0-windows-x86_64.exe) · [Linux `x64` (3.18 MB)](https://github.com/Nour-yahyaoui/rustpad/releases/download/v1.2.0/rustpad-v1.2.0-linux-x86_64)
 
 ---
 
@@ -117,65 +147,4 @@ I began my coding journey with Python and web development fundamentals, and I've
 
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-
-#### 🖥️ Desktop
-*Cross-platform desktop applications*
-
-![Python](https://img.shields.io/badge/Python_(Tkinter/PyQt)-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux_(Debian)-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
-#### 🔄 State Management
-*Efficient state management for complex applications*
-
-![Zustand](https://img.shields.io/badge/Zustand-20232A?style=for-the-badge&logo=react&logoColor=white)
-![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)
-![React Context](https://img.shields.io/badge/React_Context-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-
-#### 🛡️ Security & Architecture
-*Secure, scalable, and maintainable system design*
-
-![Rate Limiting](https://img.shields.io/badge/Rate_Limiting-000000?style=for-the-badge&logo=shield&logoColor=white)
-![XSS Prevention](https://img.shields.io/badge/XSS_Prevention-000000?style=for-the-badge&logo=shield&logoColor=white)
-![CSRF Protection](https://img.shields.io/badge/CSRF_Protection-000000?style=for-the-badge&logo=shield&logoColor=white)
-
-#### 🎨 Design
-*Beautiful, user-centered design experiences*
-
-![UI/UX Design](https://img.shields.io/badge/UI%2FUX_Design-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Responsive Design](https://img.shields.io/badge/Responsive_Design-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-#### 🛠️ DevOps & Tools
-*Streamlined development and deployment workflows*
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-![live-build](https://img.shields.io/badge/live--build-555555?style=for-the-badge&logo=linux&logoColor=white)
-![CLI](https://img.shields.io/badge/CLI-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
-![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
-
----
-
-### 🛡️ Security-First Development
-
-I prioritize security in every project. From implementing rate limiting and CSRF protection to preventing XSS and SQL injection attacks. My code follows SOLID principles and clean architecture patterns, ensuring maintainable, scalable, and secure applications.
-
-🛡️ Rate Limiting | 🛡️ XSS Prevention | 🛡️ CSRF Protection | 🛡️ SQL Injection Prevention | 🛡️ JWT Authentication | 🛡️ Path Traversal Protection | 🛡️ Sandboxed Shell Execution | 🛡️ Secret Scanning
-
----
-
-### 📫 Let's Connect
-
-📧 [nourryahyaoui@gmail.com](mailto:nourryahyaoui@gmail.com)  
-🔗 [Portfolio Website](https://nour-yahyaoui.vercel.app)  
-
----
-
-<p align="center">
-  © 2026 Nour Yahyaoui. All rights reserved.
-</p>
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for
