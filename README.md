@@ -51,7 +51,7 @@ I began my coding journey with Python and web development fundamentals, and I've
 
 ### 📄 Featured Project: RustPad
 
-[![Version](https://img.shields.io/badge/version-1.2.0-DEA584?style=for-the-badge)](https://github.com/Nour-yahyaoui/rustpad/releases/tag/v1.2.0)
+[![Version](https://img.shields.io/badge/version-2.1.0-DEA584?style=for-the-badge)](https://github.com/Nour-yahyaoui/rustpad/releases/tag/v2.1.0)
 [![Rust](https://img.shields.io/badge/Rust-100%25_pure-000000?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/Nour-yahyaoui/rustpad)
 [![Windows](https://img.shields.io/badge/Windows-3.16_MB_.exe-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Nour-yahyaoui/rustpad/releases/download/v1.2.0/rustpad-v1.2.0-windows-x86_64.exe)
 [![Linux](https://img.shields.io/badge/Linux-3.18_MB_x64-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/Nour-yahyaoui/rustpad/releases/download/v1.2.0/rustpad-v1.2.0-linux-x86_64)
