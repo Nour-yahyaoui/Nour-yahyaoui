@@ -1,0 +1,55 @@
+### readme-stats(official)
+URL: https://github-readme-stats.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical
+META: 503|text/plain; charset=utf-8|99
+TEXT: The deployment is currently unavailable DEPLOYMENT_PAUSED cle1::mll26-1793289337647-d958d611965e 
+
+### readme-stats mirror anuraghazra1
+URL: https://github-readme-stats-anuraghazra.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical
+META: 200|image/svg+xml; charset=utf-8|771
+TEXT:  .text { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #fe428e } .small { font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #a9fef7 } .gray { fill: #858585 } Something went wrong! Downtime due to GitHub API rate limiting You can deploy own instance or wait until public will be no longer limited 
+
+### readme-stats mirror sigma-five
+URL: https://github-readme-stats-sigma-five.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical
+META: 200|image/svg+xml; charset=utf-8|781
+TEXT:  .text { font: 600 16px 'Segoe UI', Ubuntu, Sans-Serif; fill: #2F80ED } .small { font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #252525 } .gray { fill: #858585 } Something went wrong! file an issue at https://git.io/JJmN9 Maximum retries exceeded Please add an env variable called PAT_1 with your github token in v
+
+### stats-extended stats
+URL: https://github-stats-extended.vercel.app/api?username=Nour-yahyaoui&show_icons=true&rank_icon=github&theme=radical&include_all_commits=true
+META: 200|image/svg+xml|8454
+TEXT:  <svg width="467" height="195" viewBox="0 0 467 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="descId" > Nour-Yahyaoui&#39;s GitHub Stats, Rank: A- Total Stars Earned: 226, Total Commits : 34675, Total PRs: 79, Total Issues: 34, Contributed to (last year): 6 .header { font: 600 18px 'Se
+
+### stats-extended top-langs
+URL: https://github-stats-extended.vercel.app/api/top-langs/?username=Nour-yahyaoui&layout=compact&langs_count=8&theme=radical&hide_border=true
+META: 200|image/svg+xml|6829
+TEXT:  <svg width="300" height="190" viewBox="0 0 300 190" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="descId" > .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #fe428e; animation: fadeInAnimation 0.8s ease-in-out forwards; } @supports(-moz-appearance: auto) { /* Selector detects
+
+### streak demolab
+URL: https://streak-stats.demolab.com?user=Nour-yahyaoui&theme=radical&hide_border=true&timezone=Africa%2FTunis
+META: 200|image/svg+xml|7056
+TEXT: <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='isolation: isolate' viewBox='0 0 495 195' width='495px' height='195px' direction='ltr'> @keyframes currstreak { 0% { font-size: 3px; opacity: 0.2; } 80% { font-size: 34px; opacity: 1; } 100% { font-size: 28px; opacity: 1; } } @key
+
+### summary profile-details
+URL: https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nour-yahyaoui&theme=radical
+META: 200|image/svg+xml; charset=utf-8|8480
+TEXT:  * { font-family: 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif } Nour-yahyaoui (Nour-…) 19.31k Contributions on GitHub 28 Public Repos Joined GitHub 2 years ago nourryahyaoui@gmail.com 25/10 25/12 26/02 26/04 26/06 26/08 26/10 0 1,000 2,000 3,000 4,000 5,000 6,000 7,000 8,000 contributions in the last year 
+
+### summary productive-time
+URL: https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Nour-yahyaoui&theme=radical&utcOffset=1
+META: 200|image/svg+xml; charset=utf-8|6060
+TEXT:  * { font-family: 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif } Commits (UTC +1.00) 0 6 12 18 23 0 20 40 60 80 100 per day hour 
+
+### summary repos-per-language
+URL: https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Nour-yahyaoui&theme=radical
+META: 200|image/svg+xml; charset=utf-8|3276
+TEXT:  * { font-family: 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif } Top Languages by Repo TypeScript Rust JavaScript Python HTML 
+
+### star-history badge
+URL: https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026
+META: 200|image/svg+xml;charset=utf-8|19252
+TEXT:  
+
+### ghchart
+URL: https://ghchart.rshah.org/2ea44f/Nour-yahyaoui
+META: 200|image/svg+xml|54064
+TEXT:  Sun Mon Tue Wed Thu Fri Sat Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep Oct 
+
