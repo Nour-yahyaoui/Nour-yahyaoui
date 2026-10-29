@@ -1,9 +1,19 @@
 name: Update GitHub Trophies
-# Manual refresh: 2026-10-29 (touch this line to trigger a regeneration)
 
 # Regenerates .github/assets/trophy.svg from live GitHub data and commits it,
 # so the README never depends on a public image host that can be paused,
 # rate-limited or taken down.
+#
+# Sizing note: the renderer draws every trophy from hard-coded 115-unit
+# artwork, so enlarging the panel box only adds empty space — it does not make
+# the trophy bigger. What actually controls on-screen size is how many trophies
+# share a row. With the default single row, 9 trophies at 1115px wide are
+# squeezed to ~35px each on a phone. Wrapping to COLUMNS gives each trophy a
+# far larger share of the width, which is what makes them legible on mobile.
+#
+#   COLUMNS=2 → 2 per row, 5 rows, each trophy ~48% of the card width
+#   COLUMNS=3 → 3 per row, 3 rows, each trophy ~31% of the card width
+#   COLUMNS=-1 → upstream default, all trophies in one row (too small on mobile)
 #
 # Triggers:
 #   - workflow_dispatch: run it manually whenever you want fresh trophies
@@ -28,6 +38,15 @@ concurrency:
   group: update-trophies
   cancel-in-progress: true
 
+env:
+  # Official renderer, pinned to a release commit for reproducible output.
+  GENERATOR_REPO: ryo-ma/github-profile-trophy
+  GENERATOR_SHA: 43736b50a82fca73c8df1c81abb40aa03519975c
+  TROPHY_PATH: .github/assets/trophy.svg
+  THEME: radical
+  COLUMNS: "2"
+  MARGIN: "12"
+
 jobs:
   generate:
     name: Generate and commit trophy SVG
@@ -37,23 +56,78 @@ jobs:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Prepare asset directory
-        run: mkdir -p .github/assets
+      - name: Checkout trophy renderer at pinned commit
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.GENERATOR_REPO }}
+          ref: ${{ env.GENERATOR_SHA }}
+          path: .generator
+          persist-credentials: false
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Configure grid layout
+        working-directory: .generator
+        run: |
+          set -euo pipefail
+          f="render_svg.ts"
+          sed -i \
+            -e "s/const maxColumn = -1; \/\/ auto/const maxColumn = ${COLUMNS};/" \
+            -e "s/const marginWidth = 10;/const marginWidth = ${MARGIN};/" \
+            -e "s/const marginHeight = 10;/const marginHeight = ${MARGIN};/" \
+            "$f"
+          # Fail loudly if upstream changes its source shape and a patch misses.
+          grep -qF "const maxColumn = ${COLUMNS};" "$f" \
+            || { echo "::error::Failed to apply column patch"; exit 1; }
+          grep -qF "const marginWidth = ${MARGIN};" "$f" \
+            || { echo "::error::Failed to apply margin patch"; exit 1; }
+          grep -nE "const (panelSize|maxRow|maxColumn|marginWidth|marginHeight)" "$f"
+
+          # Hide trophies that carry no signal (e.g. Reviews, which renders as
+          # "Unknown 0pt"). Keeps the grid an even 4x2 instead of a ragged row.
+          python3 - <<'PY'
+          import re, sys
+          path = "render_svg.ts"
+          src = open(path).read()
+          patched, n = re.subn(
+              r"new Card\(\s*\[\s*\],\s*\[\s*\],",
+              'new Card(\n    ["-Reviews"],\n    [],',
+              src,
+              count=1,
+          )
+          if n != 1:
+              sys.exit("::error::Failed to apply trophy exclusion patch")
+          open(path, "w").write(patched)
+          print("excluded titles:", re.search(r'new Card\(\s*\[([^\]]*)\]', patched).group(1).strip())
+          PY
+          grep -A2 "const card = new Card" "$f"
+
+          # Long subtitles ("Rainbow Lang User", "Hyper Repo Creator") are drawn
+          # at a fixed 10.5px inside a 115-unit panel and clip at the edges.
+          # Trim them slightly so every label fits within its panel.
+          t="src/trophy.ts"
+          sed -i -e 's/font-size="10.5"/font-size="9.2"/g' "$t"
+          grep -qF 'font-size="9.2"' "$t" \
+            || { echo "::error::Failed to apply message text sizing patch"; exit 1; }
+          echo "message font-size patched: $(grep -o 'font-size="9.2"' "$t" | wc -l) occurrence(s)"
 
       - name: Generate trophy SVG
-        # Official ryo-ma generator, pinned to a release commit for
-        # reproducible output. Runs the renderer locally in the runner.
-        uses: ryo-ma/github-profile-trophy@43736b50a82fca73c8df1c81abb40aa03519975c
-        with:
-          username: Nour-yahyaoui
-          output_path: .github/assets/trophy.svg
-          theme: radical
-          token: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: .generator
+        env:
+          GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p "$GITHUB_WORKSPACE/$(dirname "$TROPHY_PATH")"
+          deno run --allow-net --allow-env --allow-read --allow-write \
+            render_svg.ts Nour-yahyaoui "$GITHUB_WORKSPACE/$TROPHY_PATH" "$THEME"
 
       - name: Validate generated SVG
         run: |
           set -euo pipefail
-          f=".github/assets/trophy.svg"
+          f="$TROPHY_PATH"
           if [ ! -s "$f" ]; then
             echo "::error file=$f::Trophy SVG was not generated (file missing or empty)."
             exit 1
@@ -76,12 +150,27 @@ jobs:
             echo "::error file=$f::SVG is suspiciously small (${size} bytes)."
             exit 1
           fi
-          echo "Validated trophy SVG (${size} bytes)."
+          width=$(grep -oE 'width="[0-9]+"' "$f" | head -1 | grep -oE '[0-9]+')
+          height=$(grep -oE 'height="[0-9]+"' "$f" | head -1 | grep -oE '[0-9]+')
+          panels=$(grep -c 'rx="4.5"' "$f" || true)
+          echo "SVG ${size} bytes, ${width}x${height}, ${panels} panels"
+          # A single-row card means the column patch silently stopped applying,
+          # and the trophies would be too small to read on a phone again.
+          max_width=$(( 115 * COLUMNS + 12 * (COLUMNS - 1) ))
+          if [ "${width:-0}" -gt "$max_width" ]; then
+            echo "::error file=$f::Card is ${width}px wide, expected <= ${max_width}px for ${COLUMNS} columns."
+            exit 1
+          fi
+          if [ "${panels:-0}" -lt 5 ]; then
+            echo "::error file=$f::Expected at least 5 trophy panels, found ${panels}."
+            exit 1
+          fi
           {
             echo "### Trophies regenerated"
             echo ""
             echo "- File: \`$f\`"
             echo "- Size: ${size} bytes"
+            echo "- Grid: ${width}x${height} px, ${panels} panels, ${COLUMNS} per row"
             echo "- Commit: \`${GITHUB_SHA}\`"
           } >> "$GITHUB_STEP_SUMMARY"
 
@@ -90,7 +179,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/assets/trophy.svg
+          git add "$TROPHY_PATH"
           if git diff --cached --quiet; then
             echo "Trophy SVG is already up to date — nothing to commit."
             exit 0
