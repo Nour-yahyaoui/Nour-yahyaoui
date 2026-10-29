@@ -1,4 +1,5 @@
 name: Update GitHub Trophies
+# Manual refresh: 2026-10-29 (touch this line to trigger a regeneration)
 
 # Regenerates .github/assets/trophy.svg from live GitHub data and commits it,
 # so the README never depends on a public image host that can be paused,
