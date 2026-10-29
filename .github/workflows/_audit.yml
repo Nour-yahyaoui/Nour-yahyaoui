@@ -5,8 +5,12 @@ on:
     branches: ["**"]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   audit:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -64,3 +68,13 @@ jobs:
             echo "|---|---|---|---|"
             awk -F'\t' '{print "| "$1" | "$2" | "$3" | "$4" |"}' /tmp/report.tsv
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish report to branch
+        run: |
+          mkdir -p audit
+          cp /tmp/report.tsv audit/last-report.tsv
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit/last-report.tsv
+          git commit -m "chore(audit): endpoint report [skip ci]"
+          git push
