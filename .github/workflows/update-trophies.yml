@@ -4,10 +4,16 @@ name: Update GitHub Trophies
 # so the README never depends on a public image host that can be paused,
 # rate-limited or taken down.
 #
-# Layout is tuned for mobile: the generator's defaults put all 9 trophies in a
-# single 1115px-wide row, which GitHub then shrinks to ~35px per panel on a
-# phone. Rendering a 2-column grid instead gives each panel roughly 4x the
-# on-screen area, so the labels stay readable without pinch-zooming.
+# Sizing note: the renderer draws every trophy from hard-coded 115-unit
+# artwork, so enlarging the panel box only adds empty space — it does not make
+# the trophy bigger. What actually controls on-screen size is how many trophies
+# share a row. With the default single row, 9 trophies at 1115px wide are
+# squeezed to ~35px each on a phone. Wrapping to COLUMNS gives each trophy a
+# far larger share of the width, which is what makes them legible on mobile.
+#
+#   COLUMNS=2 → 2 per row, 5 rows, each trophy ~48% of the card width
+#   COLUMNS=3 → 3 per row, 3 rows, each trophy ~31% of the card width
+#   COLUMNS=-1 → upstream default, all trophies in one row (too small on mobile)
 #
 # Triggers:
 #   - workflow_dispatch: run it manually whenever you want fresh trophies
@@ -38,9 +44,7 @@ env:
   GENERATOR_SHA: 43736b50a82fca73c8df1c81abb40aa03519975c
   TROPHY_PATH: .github/assets/trophy.svg
   THEME: radical
-  # Grid layout. Rows are implied: 9 trophies / 2 columns = 5 rows.
   COLUMNS: "2"
-  PANEL_SIZE: "190"
   MARGIN: "12"
 
 jobs:
@@ -71,20 +75,15 @@ jobs:
           set -euo pipefail
           f="render_svg.ts"
           sed -i \
-            -e "s/const panelSize = 115;/const panelSize = ${PANEL_SIZE};/" \
             -e "s/const maxColumn = -1; \/\/ auto/const maxColumn = ${COLUMNS};/" \
             -e "s/const marginWidth = 10;/const marginWidth = ${MARGIN};/" \
             -e "s/const marginHeight = 10;/const marginHeight = ${MARGIN};/" \
             "$f"
           # Fail loudly if upstream changes its source shape and a patch misses.
-          for expected in \
-            "const panelSize = ${PANEL_SIZE};" \
-            "const maxColumn = ${COLUMNS};" \
-            "const marginWidth = ${MARGIN};" \
-            "const marginHeight = ${MARGIN};"
-          do
-            grep -qF "$expected" "$f" || { echo "::error::Failed to apply layout patch: $expected"; exit 1; }
-          done
+          grep -qF "const maxColumn = ${COLUMNS};" "$f" \
+            || { echo "::error::Failed to apply column patch"; exit 1; }
+          grep -qF "const marginWidth = ${MARGIN};" "$f" \
+            || { echo "::error::Failed to apply margin patch"; exit 1; }
           grep -nE "const (panelSize|maxRow|maxColumn|marginWidth|marginHeight)" "$f"
 
       - name: Generate trophy SVG
@@ -127,9 +126,11 @@ jobs:
           height=$(grep -oE 'height="[0-9]+"' "$f" | head -1 | grep -oE '[0-9]+')
           panels=$(grep -c 'rx="4.5"' "$f" || true)
           echo "SVG ${size} bytes, ${width}x${height}, ${panels} panels"
-          # A single-row card means the layout patch silently stopped applying.
-          if [ "${width:-0}" -gt 900 ]; then
-            echo "::error file=$f::Card is ${width}px wide — expected a wrapped grid, not one row."
+          # A single-row card means the column patch silently stopped applying,
+          # and the trophies would be too small to read on a phone again.
+          max_width=$(( 115 * COLUMNS + 12 * (COLUMNS - 1) ))
+          if [ "${width:-0}" -gt "$max_width" ]; then
+            echo "::error file=$f::Card is ${width}px wide, expected <= ${max_width}px for ${COLUMNS} columns."
             exit 1
           fi
           if [ "${panels:-0}" -lt 5 ]; then
@@ -141,7 +142,7 @@ jobs:
             echo ""
             echo "- File: \`$f\`"
             echo "- Size: ${size} bytes"
-            echo "- Grid: ${width}x${height} px, ${panels} panels, ${COLUMNS} columns"
+            echo "- Grid: ${width}x${height} px, ${panels} panels, ${COLUMNS} per row"
             echo "- Commit: \`${GITHUB_SHA}\`"
           } >> "$GITHUB_STEP_SUMMARY"
 

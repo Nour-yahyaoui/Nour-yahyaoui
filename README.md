@@ -44,7 +44,7 @@ I began my coding journey with Python and web development fundamentals, and I've
 </p>
 
 <p align="center">
-  <img width="470" src=".github/assets/trophy.svg" alt="GitHub trophies" />
+  <img width="430" src=".github/assets/trophy.svg" alt="GitHub trophies" />
 </p>
 
 ---
