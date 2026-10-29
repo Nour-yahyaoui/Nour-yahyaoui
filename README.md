@@ -1,175 +1,187 @@
-# Hey, I'm Nour Yahyaoui 👋
+<h1 align="center">Hiiiii 👋, I'm Nour Yahyaoui</h1>
 
 <p align="center">
-  <strong>Building software, exploring systems, and turning ideas into real products.</strong>
+  <i>"AI power with the perfect leadership"</i>
 </p>
+
+<div align="center">
+  <p>
+    <a href="https://user-badge.committers.top/tunisia/Nour-yahyaoui">
+      <img src="https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" alt="committers.top Tunisia badge" />
+    </a>
+  </p>
+  <p>
+    <sub>Ranked among the most active GitHub committers in Tunisia — <a href="https://committers.top/tunisia">live ranking</a></sub>
+  </p>
+</div>
+
+---
+
+### 👨‍💻 About Me
+
+🎓 19-year-old full-stack developer from Tunisia with **3 years of freelance/client experience**.
+💻 I craft beautiful, secure, and scalable applications with modern technologies. From web and mobile to desktop, I turn complex problems into elegant solutions.
+
+**My Journey:**
+I began my coding journey with Python and web development fundamentals, and I've since progressed through JavaScript, React, and modern full-stack development with Next.js, React Native, and serverless architectures. I build production web apps end-to-end — frontend, backend, and deployment — and I'm currently expanding into **Rust (Actix Web / Axum & native systems)** to build performance-critical backend services and desktop software. What drives me is creating secure, scalable applications that solve real problems. Lately that also means building my own tooling from scratch: **RustPad**, a ~4 MB zero-dependency pure-Rust desktop Word & PDF studio, and **nour-code**, a local AI coding agent that runs Qwen3 8B on Ollama and gives it audited, permission-checked access to real tools.
+
+📌 Check my pinned repos below for what I actually build — that's a better signal than any project count.
+
+---
+
+### 📊 GitHub Stats & Rankings
 
 <p align="center">
   <a href="https://github.com/Nour-yahyaoui">
-    <img src="https://img.shields.io/badge/GitHub-Nour--yahyaoui-181717?style=flat-square&logo=github" alt="GitHub" />
+    <img height="170" src="https://github-stats-extended.vercel.app/api?username=Nour-yahyaoui&show_icons=true&rank_icon=github&include_all_commits=true&theme=radical" alt="Nour's GitHub stats" />
   </a>
+  <a href="https://github.com/Nour-yahyaoui">
+    <img height="170" src="https://streak-stats.demolab.com?user=Nour-yahyaoui&theme=radical&hide_border=true&timezone=Africa%2FTunis" alt="GitHub contribution streak" />
+  </a>
+</p>
+
+<p align="center">
   <a href="https://github.com/Nour-yahyaoui?tab=repositories">
-    <img src="https://img.shields.io/badge/Open%20Source-Projects-2ea44f?style=flat-square&logo=github" alt="Open source projects" />
-  </a>
-  <a href="https://www.star-history.com/#Nour-yahyaoui">
-    <img src="https://img.shields.io/badge/Star%20History-Explore-blue?style=flat-square&logo=github" alt="Star History" />
-  </a>
-</p>
-
----
-
-## About Me
-
-I'm a software developer from Tunisia interested in building complete, production-oriented software — from application interfaces and backend architectures to operating systems, developer tools, and AI-powered systems.
-
-My journey started with Python and web development, then expanded into JavaScript, TypeScript, React, Next.js, and server-side development.
-
-Today, I'm also exploring **Rust, systems programming, and local AI agents**, with a particular interest in performance, security, and software that works independently of cloud services.
-
-I don't just want to build applications. I want to understand how the systems behind them actually work.
-
-**Currently building and exploring:**
-- Native desktop software with Rust.
-- Linux distributions and development environments.
-- Local AI agents with controlled tool execution.
-- Full-stack applications and backend infrastructure.
-
----
-
-## GitHub Statistics
-
-<p align="center">
-  <a href="https://github.com/Nour-yahyaoui">
-    <img width="49%" src="https://github-stats-extended.vercel.app/api?username=Nour-yahyaoui&show_icons=true&rank_icon=github&theme=radical&include_all_commits=true" alt="GitHub statistics" />
+    <img height="170" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Nour-yahyaoui&layout=compact&langs_count=8&theme=radical&hide_border=true" alt="Most used programming languages" />
   </a>
   <a href="https://github.com/Nour-yahyaoui">
-    <img width="49%" src="https://streak-stats.demolab.com?user=Nour-yahyaoui&theme=radical&hide_border=true&timezone=Africa%2FTunis" alt="GitHub contribution streak" />
+    <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Nour-yahyaoui&theme=radical&utcOffset=1" alt="Commits by hour of day" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/Nour-yahyaoui">
-    <img width="49%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Nour-yahyaoui&layout=compact&langs_count=8&theme=radical&hide_border=true" alt="Most used programming languages" />
+    <img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nour-yahyaoui&theme=radical" alt="GitHub profile summary" />
   </a>
 </p>
 
-### 🏆 GitHub Achievements
+#### 🏆 GitHub Achievements
 
 <p align="center">
-  <img src=".github/assets/trophy.svg" alt="GitHub profile trophies" />
+  <a href="https://github.com/Nour-yahyaoui/Nour-yahyaoui/actions/workflows/update-trophies.yml">
+    <img src=".github/assets/trophy.svg" alt="GitHub profile trophies" />
+  </a>
 </p>
+
+> **Card sources.** The stats, streak and summary cards are rendered on demand by public services; the trophy SVG is generated inside this repository by [a scheduled workflow](.github/workflows/update-trophies.yml) and committed to `.github/assets/trophy.svg`, so it never depends on a third-party image host. Every image endpoint this README uses is checked monthly by the [`readme-health`](.github/workflows/readme-health.yml) workflow — see [`docs/readme-assets.md`](docs/readme-assets.md) for the audit log, known limitations and fallbacks.
 
 ---
 
-## Featured Projects
+### 📄 Featured Project: RustPad
 
-### 📄 RustPad — Native Word & PDF Studio
+[![Version](https://img.shields.io/github/v/release/Nour-yahyaoui/rustpad?style=for-the-badge&color=DEA584&label=version)](https://github.com/Nour-yahyaoui/rustpad/releases/latest)
+[![Rust](https://img.shields.io/badge/Rust-100%25_pure-000000?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/Nour-yahyaoui/rustpad)
+[![Windows](https://img.shields.io/badge/Windows-x86__64_.exe-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Nour-yahyaoui/rustpad/releases/latest)
+[![Linux](https://img.shields.io/badge/Linux-x86__64_ELF-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/Nour-yahyaoui/rustpad/releases/latest)
+[![Dependencies](https://img.shields.io/badge/crates.io_deps-0-2EA44F?style=for-the-badge)](https://github.com/Nour-yahyaoui/rustpad)
 
-<a href="https://github.com/Nour-yahyaoui/rustpad">
-  <img src="https://img.shields.io/badge/Rust-100%25%20Pure-DEA584?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
-</a>
-<a href="https://github.com/Nour-yahyaoui/rustpad/releases">
-  <img src="https://img.shields.io/github/v/release/Nour-yahyaoui/rustpad?style=for-the-badge&color=black" alt="Latest release" />
-</a>
+**RustPad** is a native desktop Microsoft Word (`.docx`) and vector PDF (`.pdf`) studio written in **zero-dependency Rust** across 9 workspace crates. Instead of shipping a 400 MB Chromium/WebView wrapper, it compiles its own DEFLATE/PKZIP archiver, ECMA-376 OpenXML engine, ISO 32000 PDF 1.7 engine, TrueType glyph rasterizer, and native Win32/X11 window backend into a single **~4 MB** standalone executable that cold-starts in under 100 ms.
 
-RustPad is a native desktop Word (`.docx`) and vector PDF (`.pdf`) studio built entirely with Rust.
+- **Full `.docx` & `.pdf` studio in one binary:** paginated A4/Letter Word authoring (headings, lists, tables, images, find/replace, starter templates), inline vector PDF text editing, highlights, sticky notes, freehand ink signatures, true text-purging redaction, page merge/split/rotate, and a 50/50 split workspace with a 49-action `Ctrl+K` command palette.
+- **Zero `crates.io` dependencies, air-gapped builds:** all 9 crates (`rustpad_zip`, `docx_io`, `pdf_create`, `pdf_engine`, `doc_model`, `power_tools`, `rustpad_render`, `rustpad_window`, `app`) build and pass tests completely offline with standard `rustc` + `cargo` — loading `libX11.so.6` dynamically on Linux and linking Win32 `user32`/`gdi32`/`comdlg32` directly on Windows.
+- **Headless CLI & local Time-Machine:** run `rustpad convert`, `inspect`, `merge`, and `ocr` in CI or scripts without a display server, while interactive sessions keep compressed local snapshots for instant version rollback with zero telemetry or cloud accounts.
 
-Instead of relying on a massive Chromium or WebView runtime, RustPad implements its own document processing, PDF engine, rendering, and native window infrastructure.
-
-**Highlights:**
-- Full document authoring with pagination, headings, lists, tables, and images.
-- PDF text editing, annotations, signatures, and permanent text redaction.
-- Page merging, splitting, rotation, and document management.
-- Custom ZIP/DEFLATE and OpenXML implementations.
-- Native Win32 and X11 window backends.
-- Zero external `crates.io` dependencies.
-- Headless CLI for conversion, inspection, merging, and OCR.
-- Local snapshots and rollback without cloud accounts.
-
-**Links:** [Repository](https://github.com/Nour-yahyaoui/rustpad) · [Releases](https://github.com/Nour-yahyaoui/rustpad/releases) · [Live Showcase](https://rustpad-studio.vercel.app)
+🔗 [Source and releases](https://github.com/Nour-yahyaoui/rustpad) · [Latest release](https://github.com/Nour-yahyaoui/rustpad/releases/latest) · [Windows `.exe`](https://github.com/Nour-yahyaoui/rustpad/releases/latest) · [Linux `x64`](https://github.com/Nour-yahyaoui/rustpad/releases/latest)
 
 ---
 
-### 🚀 VexOS Desktop — A Linux Development Environment
+### 🚀 Featured Project: VexOS Desktop
 
-<a href="https://github.com/Nour-yahyaoui/vexos">
-  <img src="https://img.shields.io/badge/Debian-Trixie-A81D33?style=for-the-badge&logo=debian&logoColor=white" alt="Debian Trixie" />
-</a>
-<a href="https://github.com/Nour-yahyaoui/vexos/releases">
-  <img src="https://img.shields.io/badge/Release-Candidate-orange?style=for-the-badge" alt="Release candidate" />
-</a>
+[![Version](https://img.shields.io/github/v/release/Nour-yahyaoui/vexos?style=for-the-badge&color=E95420&label=version)](https://github.com/Nour-yahyaoui/vexos/releases/latest)
+[![Debian](https://img.shields.io/badge/Debian-trixie-A81D33?style=for-the-badge&logo=debian&logoColor=white)](https://github.com/Nour-yahyaoui/vexos)
+[![Status](https://img.shields.io/badge/status-release_candidate-orange?style=for-the-badge)](https://github.com/Nour-yahyaoui/vexos)
 
-VexOS Desktop is a live Linux development environment built on Debian Trixie.
+**VexOS Desktop** is a live Linux desktop built from Debian trixie for web and software development. Boot one ISO in VirtualBox and you get XFCE, Firefox ESR, Python 3, Node.js with npm, Rust with cargo, gcc, git, and **VexOS DevStudio**: a browser-based IDE with a code editor, a Run button, a live preview, and an AI assistant that uses your own Groq key, which stays on your machine.
 
-It brings together a ready-to-use desktop, development tools, and a browser-based IDE.
+- **Built from source:** the image is made with live-build, and every package list is a plain text file in the repo.
+- **Clean by design:** the live session runs in RAM, so a reboot restores the system to its starting state.
+- **Ready to code:** the compilers, runtimes, and the IDE are already set up when it boots.
 
-**Highlights:**
-- Debian-based live ISO built with `live-build`.
-- XFCE desktop and Firefox ESR.
-- Python, Node.js, Rust, GCC, and Git preconfigured.
-- VexOS DevStudio with code editing and live preview.
-- Integrated AI assistant powered by the user's own Groq API key.
-- RAM-based live sessions that reset after reboot.
-
-**Links:** [Repository](https://github.com/Nour-yahyaoui/vexos) · [Releases](https://github.com/Nour-yahyaoui/vexos/releases) · [Website](https://vexos-omega.vercel.app) · [Documentation](https://vexos-omega.vercel.app/docs/)
+🔗 [Source and downloads](https://github.com/Nour-yahyaoui/vexos) · [Releases](https://github.com/Nour-yahyaoui/vexos/releases)
 
 ---
 
-### 🤖 nour-code — Local AI Coding Agent
+### 🤖 Featured Project: nour-code
 
-<a href="https://github.com/Nour-yahyaoui/nour-code">
-  <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-</a>
-<a href="https://github.com/Nour-yahyaoui/nour-code">
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-</a>
-<a href="https://github.com/Nour-yahyaoui/nour-code">
-  <img src="https://img.shields.io/badge/Tests-265%20Passing-2ea44f?style=for-the-badge" alt="265 passing tests" />
-</a>
+[![Version](https://img.shields.io/github/v/release/Nour-yahyaoui/nour-code?style=for-the-badge&color=3776AB&label=version)](https://github.com/Nour-yahyaoui/nour-code/releases/latest)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
+[![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
+[![Tests](https://img.shields.io/badge/tests-265_passing-2EA44F?style=for-the-badge&logo=pytest&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
 
-nour-code is a local AI coding agent built around Qwen3 8B and Ollama.
+**nour-code** is a production-grade **local** AI coding agent. It puts a **Qwen3 8B** model running on [Ollama](https://ollama.com) behind a FastAPI server and gives it *controlled* access to your filesystem, your shell and an extensible set of Python **skills**. Nothing leaves your machine except the traffic you explicitly allow.
 
-It gives an AI model controlled access to real development tools while keeping execution permissions, filesystem boundaries, and security checks under explicit control.
+- **Real tools, real guardrails:** `read_file`, `write_file`, `list_directory`, `search_files`, `run_shell`, `apply_patch`, `delete_file` — every path is validated against `permissions.yaml`, symlink escapes are rejected, shell commands run against an allow/deny list with timeouts, and every call is written to a JSONL audit trail.
+- **Hot-reloadable skills:** drop a Python file into the skills directory (or `POST /skills/reload`) and its tools join the model's tool list. Two ship in the box — `security_skill` (secret scanning, dangerous patterns, dependency CVEs) and `production_skill` (logging, error handling, input validation, Dockerfile, CI pipeline).
+- **Production-Ready Mode:** ask to *"make it production ready"* and the agent hardens every file it touches, refuses to hand back TODO stubs, and appends a readiness checklist.
+- **Built like a service, not a script:** SSE token streaming, 2-hour sessions that survive restarts, rotating JSON logs, optional Prometheus metrics, async I/O end to end, and a 265-test offline suite.
 
-**Highlights:**
-- Local inference through Ollama.
-- FastAPI backend with streaming responses.
-- File reading, writing, searching, and patching.
-- Controlled shell execution with allow/deny rules.
-- Filesystem permission validation and symlink escape protection.
-- JSONL audit logging.
-- Hot-reloadable Python skills.
-- Security scanning and production-readiness workflows.
-- Offline test suite with 265 passing tests.
-
-**Links:** [Repository and Documentation](https://github.com/Nour-yahyaoui/nour-code)
+🔗 [Source and documentation](https://github.com/Nour-yahyaoui/nour-code)
 
 ---
 
-## Technology & Tools
+### 🧰 Tech Stack
 
-### Frontend & Application Development
+#### 🖥️ Frontend
+*Building responsive, interactive UIs with modern frameworks*
 
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vite,tailwind" alt="Frontend technologies" />
-</p>
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-### Backend & Systems Programming
+#### ⚙️ Backend
+*Scalable APIs, systems programming and database architecture*
 
-<p>
-  <img src="https://skillicons.dev/icons?i=rust,python,nodejs,express,php,postgres,linux,bash" alt="Backend and systems technologies" />
-</p>
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![REST APIs](https://img.shields.io/badge/REST_API-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socket.io&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Neon DB](https://img.shields.io/badge/Neon-00BFFF?style=for-the-badge&logo=neon&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-### AI & Developer Tooling
+#### 🤖 AI & Agents
+*Local inference, tool-using agents and the guardrails around them*
 
-<p>
-  <img src="https://skillicons.dev/icons?i=python,fastapi,ollama,docker,git,github" alt="AI and developer tools" />
-</p>
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![Qwen](https://img.shields.io/badge/Qwen3-615CED?style=for-the-badge&logo=alibabacloud&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![SSE](https://img.shields.io/badge/SSE_streaming-0A0A0A?style=for-the-badge&logo=sse&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+![Ruff](https://img.shields.io/badge/Ruff-D7FF64?style=for-the-badge&logo=ruff&logoColor=black)
 
-### Mobile Development
+#### 📱 Mobile
+*Native and cross-platform mobile applications*
 
-<p>
-  <img src="https://skillicons.dev/icons?i=react,android,expo" alt="Mobile development technologies" />
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+
+#### 🧱 Systems & Tooling
+*Linux, build pipelines and the tools I live in*
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+
+---
+
+### 📈 Contribution Activity
+
+<p align="center">
+  <img width="98%" src="https://ghchart.rshah.org/2ea44f/Nour-yahyaoui" alt="Nour Yahyaoui's contribution graph" />
 </p>
 
 ---
@@ -182,6 +194,12 @@ It gives an AI model controlled access to real development tools while keeping e
   </a>
   <a href="https://www.linkedin.com/in/nour-yahyaoui/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:nourryahyaoui@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://github.com/Nour-yahyaoui?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositories-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" />
   </a>
 </p>
 

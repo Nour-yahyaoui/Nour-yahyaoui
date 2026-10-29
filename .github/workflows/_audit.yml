@@ -1,4 +1,4 @@
-name: TEMP endpoint audit 2
+name: TEMP verify
 
 on:
   push:
@@ -9,48 +9,27 @@ permissions:
   contents: write
 
 jobs:
-  audit:
+  verify:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inspect SVG content of candidate services
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run checker on final README
         run: |
-          set -u
           mkdir -p audit
-          : > audit/round2.txt
-          inspect() {
-            local name="$1" url="$2"
-            local meta
-            meta=$(curl -sS -L --max-time 40 -A "Mozilla/5.0 (compatible; readme-audit/1.0)" \
-              -o /tmp/b.svg -w "%{http_code}|%{content_type}|%{size_download}" "$url" 2>/dev/null || echo "ERR||")
-            local text
-            text=$(sed -e 's/<[^>]*>/ /g' /tmp/b.svg 2>/dev/null | tr -s ' \n\t' ' ' | cut -c1-320)
-            {
-              echo "### $name"
-              echo "URL: $url"
-              echo "META: $meta"
-              echo "TEXT: $text"
-              echo
-            } >> audit/round2.txt
-          }
-
-          inspect "readme-stats(official)" "https://github-readme-stats.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical"
-          inspect "readme-stats mirror anuraghazra1" "https://github-readme-stats-anuraghazra.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical"
-          inspect "readme-stats mirror sigma-five" "https://github-readme-stats-sigma-five.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical"
-          inspect "stats-extended stats" "https://github-stats-extended.vercel.app/api?username=Nour-yahyaoui&show_icons=true&rank_icon=github&theme=radical&include_all_commits=true"
-          inspect "stats-extended top-langs" "https://github-stats-extended.vercel.app/api/top-langs/?username=Nour-yahyaoui&layout=compact&langs_count=8&theme=radical&hide_border=true"
-          inspect "streak demolab" "https://streak-stats.demolab.com?user=Nour-yahyaoui&theme=radical&hide_border=true&timezone=Africa%2FTunis"
-          inspect "summary profile-details" "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nour-yahyaoui&theme=radical"
-          inspect "summary productive-time" "https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Nour-yahyaoui&theme=radical&utcOffset=1"
-          inspect "summary repos-per-language" "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Nour-yahyaoui&theme=radical"
-          inspect "star-history badge" "https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026"
-          inspect "ghchart" "https://ghchart.rshah.org/2ea44f/Nour-yahyaoui"
-          cat audit/round2.txt
+          set +e
+          python3 scripts/check_readme_assets.py > audit/verify.txt 2>&1
+          echo "EXIT=$?" >> audit/verify.txt
+          set -e
+          cp /tmp/readme-health.md audit/verify.md 2>/dev/null || true
+          cat audit/verify.txt
       - name: Publish
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add audit/round2.txt
-          git commit -m "chore(audit): round 2 [skip ci]"
+          git add audit
+          git commit -m "chore(audit): verification report [skip ci]" || exit 0
           git push

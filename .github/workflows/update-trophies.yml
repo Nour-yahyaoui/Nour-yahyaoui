@@ -1,32 +1,98 @@
-
 name: Update GitHub Trophies
+
+# Regenerates .github/assets/trophy.svg from live GitHub data and commits it,
+# so the README never depends on a public image host that can be paused,
+# rate-limited or taken down.
+#
+# Triggers:
+#   - workflow_dispatch: run it manually whenever you want fresh trophies
+#   - schedule:          weekly refresh
+#   - push:              only when this workflow file itself changes (bootstrap)
+#
+# The generated commit contains "[skip ci]" and does not touch this workflow
+# file, so it cannot re-trigger itself in a loop.
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "17 3 * * 1" # Mondays, 03:17 UTC
+  push:
+    paths:
+      - ".github/workflows/update-trophies.yml"
 
 permissions:
   contents: write
 
+concurrency:
+  group: update-trophies
+  cancel-in-progress: true
+
 jobs:
   generate:
+    name: Generate and commit trophy SVG
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
 
-      - name: Generate trophies
-        uses: soulteary/github-profile-trophy-action@v1
+      - name: Prepare asset directory
+        run: mkdir -p .github/assets
+
+      - name: Generate trophy SVG
+        # Official ryo-ma generator, pinned to a release commit for
+        # reproducible output. Runs the renderer locally in the runner.
+        uses: ryo-ma/github-profile-trophy@43736b50a82fca73c8df1c81abb40aa03519975c
         with:
-          options: "username=${{ github.repository_owner }}&theme=radical&column=7&margin-w=12&margin-h=12"
-          path: .github/assets/trophy.svg
+          username: Nour-yahyaoui
+          output_path: .github/assets/trophy.svg
+          theme: radical
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate generated SVG
+        run: |
+          set -euo pipefail
+          f=".github/assets/trophy.svg"
+          if [ ! -s "$f" ]; then
+            echo "::error file=$f::Trophy SVG was not generated (file missing or empty)."
+            exit 1
+          fi
+          size=$(wc -c < "$f")
+          head_bytes=$(head -c 400 "$f")
+          case "$head_bytes" in
+            *"<svg"*) ;;
+            *)
+              echo "::error file=$f::Output does not look like an SVG document."
+              head -c 400 "$f"
+              exit 1
+              ;;
+          esac
+          if grep -qiE "something went wrong|rate limit|maximum retries" "$f"; then
+            echo "::error file=$f::Generator returned an error card instead of trophies."
+            exit 1
+          fi
+          if [ "$size" -lt 2000 ]; then
+            echo "::error file=$f::SVG is suspiciously small (${size} bytes)."
+            exit 1
+          fi
+          echo "Validated trophy SVG (${size} bytes)."
+          {
+            echo "### Trophies regenerated"
+            echo ""
+            echo "- File: \`$f\`"
+            echo "- Size: ${size} bytes"
+            echo "- Commit: \`${GITHUB_SHA}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit trophy SVG
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .github/assets/trophy.svg
-          git commit -m "chore: update profile trophies" || exit 0
+          if git diff --cached --quiet; then
+            echo "Trophy SVG is already up to date — nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore(assets): refresh trophy.svg [skip ci]"
           git push
