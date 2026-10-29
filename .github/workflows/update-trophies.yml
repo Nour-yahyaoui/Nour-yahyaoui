@@ -105,6 +105,15 @@ jobs:
           PY
           grep -A2 "const card = new Card" "$f"
 
+          # Long subtitles ("Rainbow Lang User", "Hyper Repo Creator") are drawn
+          # at a fixed 10.5px inside a 115-unit panel and clip at the edges.
+          # Trim them slightly so every label fits within its panel.
+          t="src/trophy.ts"
+          sed -i -e 's/font-size="10.5"/font-size="9.2"/g' "$t"
+          grep -qF 'font-size="9.2"' "$t" \
+            || { echo "::error::Failed to apply message text sizing patch"; exit 1; }
+          echo "message font-size patched: $(grep -o 'font-size="9.2"' "$t" | wc -l) occurrence(s)"
+
       - name: Generate trophy SVG
         working-directory: .generator
         env:
