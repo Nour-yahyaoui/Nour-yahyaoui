@@ -1,4 +1,4 @@
-name: TEMP endpoint audit
+name: TEMP endpoint audit 2
 
 on:
   push:
@@ -14,67 +14,43 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Probe every candidate image endpoint
+      - name: Inspect SVG content of candidate services
         run: |
           set -u
-          probe() {
-            local url="$1"
-            local out
-            out=$(curl -sS -L --max-time 30 -A "Mozilla/5.0 (compatible; readme-audit/1.0)" \
-              -o /tmp/body -w "%{http_code}|%{content_type}|%{size_download}" "$url" 2>/tmp/err || echo "ERR")
-            local code type size
-            code=${out%%|*}; local rest=${out#*|}; type=${rest%%|*}; size=${rest##*|}
-            local head=""
-            head=$(head -c 120 /tmp/body 2>/dev/null | tr -d '\n\r' | sed 's/|/ /g')
-            printf '%s\t%s\t%s\t%s\t%s\t%s\n' "${code}" "${type}" "${size}" "$url" "$head" "$(head -c 80 /tmp/err 2>/dev/null | tr -d '\n')"
+          mkdir -p audit
+          : > audit/round2.txt
+          inspect() {
+            local name="$1" url="$2"
+            local meta
+            meta=$(curl -sS -L --max-time 40 -A "Mozilla/5.0 (compatible; readme-audit/1.0)" \
+              -o /tmp/b.svg -w "%{http_code}|%{content_type}|%{size_download}" "$url" 2>/dev/null || echo "ERR||")
+            local text
+            text=$(sed -e 's/<[^>]*>/ /g' /tmp/b.svg 2>/dev/null | tr -s ' \n\t' ' ' | cut -c1-320)
+            {
+              echo "### $name"
+              echo "URL: $url"
+              echo "META: $meta"
+              echo "TEXT: $text"
+              echo
+            } >> audit/round2.txt
           }
 
-          : > /tmp/report.tsv
-          for u in \
-            "https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" \
-            "https://committers.top/tunisia" \
-            "https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" \
-            "https://api.star-history.com/svg?repos=Nour-yahyaoui/rustpad&type=Date" \
-            "https://github-readme-stats.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical" \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=Nour-yahyaoui&layout=compact&theme=radical" \
-            "https://github-readme-stats.vercel.app/api/pin/?username=Nour-yahyaoui&repo=rustpad" \
-            "https://github-readme-stats-anuraghazra.vercel.app/api?username=Nour-yahyaoui" \
-            "https://github-readme-stats-sigma-five.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical" \
-            "https://github-stats-extended.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical" \
-            "https://github-stats-extended.vercel.app/api/top-langs/?username=Nour-yahyaoui&layout=compact" \
-            "https://streak-stats.demolab.com/?user=Nour-yahyaoui&theme=radical" \
-            "https://streak-stats.demolab.com?user=Nour-yahyaoui&theme=radical&timezone=Africa%2FTunis" \
-            "https://github-readme-streak-stats.herokuapp.com/?user=Nour-yahyaoui" \
-            "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nour-yahyaoui&theme=radical" \
-            "https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Nour-yahyaoui&theme=radical&utcOffset=1" \
-            "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Nour-yahyaoui&theme=radical" \
-            "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Nour-yahyaoui&theme=radical" \
-            "https://github-profile-trophy.vercel.app/?username=Nour-yahyaoui&theme=radical" \
-            "https://github-readme-activity-graph.vercel.app/graph?username=Nour-yahyaoui&theme=redical" \
-            "https://ghchart.rshah.org/2ea44f/Nour-yahyaoui" \
-            "https://komarev.com/ghpvc/?username=Nour-yahyaoui&color=blueviolet&style=flat-square" \
-            "https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" \
-            "https://skillicons.dev/icons?i=rust,python,react" \
-            "https://raw.githubusercontent.com/Nour-yahyaoui/Nour-yahyaoui/main/.github/assets/trophy.svg" \
-            "https://github.com/Nour-yahyaoui.png" \
-            ; do
-            probe "$u" >> /tmp/report.tsv
-          done
-
-          echo "STATUS|TYPE|BYTES|URL|BODY_HEAD|CURL_ERR"
-          cat /tmp/report.tsv
-          {
-            echo "| Code | Type | Bytes | URL |"
-            echo "|---|---|---|---|"
-            awk -F'\t' '{print "| "$1" | "$2" | "$3" | "$4" |"}' /tmp/report.tsv
-          } >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Publish report to branch
+          inspect "readme-stats(official)" "https://github-readme-stats.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical"
+          inspect "readme-stats mirror anuraghazra1" "https://github-readme-stats-anuraghazra.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical"
+          inspect "readme-stats mirror sigma-five" "https://github-readme-stats-sigma-five.vercel.app/api?username=Nour-yahyaoui&show_icons=true&theme=radical"
+          inspect "stats-extended stats" "https://github-stats-extended.vercel.app/api?username=Nour-yahyaoui&show_icons=true&rank_icon=github&theme=radical&include_all_commits=true"
+          inspect "stats-extended top-langs" "https://github-stats-extended.vercel.app/api/top-langs/?username=Nour-yahyaoui&layout=compact&langs_count=8&theme=radical&hide_border=true"
+          inspect "streak demolab" "https://streak-stats.demolab.com?user=Nour-yahyaoui&theme=radical&hide_border=true&timezone=Africa%2FTunis"
+          inspect "summary profile-details" "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nour-yahyaoui&theme=radical"
+          inspect "summary productive-time" "https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Nour-yahyaoui&theme=radical&utcOffset=1"
+          inspect "summary repos-per-language" "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Nour-yahyaoui&theme=radical"
+          inspect "star-history badge" "https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026"
+          inspect "ghchart" "https://ghchart.rshah.org/2ea44f/Nour-yahyaoui"
+          cat audit/round2.txt
+      - name: Publish
         run: |
-          mkdir -p audit
-          cp /tmp/report.tsv audit/last-report.tsv
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add audit/last-report.tsv
-          git commit -m "chore(audit): endpoint report [skip ci]"
+          git add audit/round2.txt
+          git commit -m "chore(audit): round 2 [skip ci]"
           git push
