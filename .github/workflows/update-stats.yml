@@ -1,0 +1,197 @@
+name: Update GitHub Stats Cards
+
+# Regenerates .github/assets/stats.svg and .github/assets/top-langs.svg from
+# live GitHub data and commits them, so the README never depends on
+# github-readme-stats.vercel.app — that deployment gets paused by Vercel
+# (HTTP 503 DEPLOYMENT_PAUSED) whenever the owner's hobby plan runs out of
+# spend, which is exactly what broke the "Nour's GitHub stats" image.
+#
+# How it works:
+#   - The official renderer (anuraghazra/github-readme-stats) is checked out
+#     at a pinned commit and run locally as an express server (express.js).
+#   - One file is patched: .github/scripts/patched/stats-fetcher.js replaces
+#     src/fetchers/stats.js, because the GraphQL `stargazers` field is
+#     "Resource not accessible by integration" for GitHub App tokens such as
+#     the built-in GITHUB_TOKEN; the patch sums stars via the REST API
+#     instead. The patch is verified to be the only modification.
+#   - The two cards are rendered with the exact query params the README used
+#     to hotlink, saved as SVGs, validated, and committed.
+#
+# Triggers:
+#   - workflow_dispatch: run it manually whenever you want fresh cards
+#   - schedule:          weekly refresh
+#   - push:              only when this workflow or the patched fetcher
+#                        changes (bootstrap)
+#
+# The generated commit contains "[skip ci]" and touches only the asset files,
+# so it cannot re-trigger this workflow in a loop.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "42 3 * * 1" # Mondays, 03:42 UTC
+  push:
+    paths:
+      - ".github/workflows/update-stats.yml"
+      - ".github/scripts/patched/stats-fetcher.js"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stats
+  cancel-in-progress: true
+
+env:
+  # Official renderer, pinned to a commit for reproducible output.
+  GENERATOR_REPO: anuraghazra/github-readme-stats
+  GENERATOR_SHA: 54a7985aeefda00d5eadb55b80c17c7f976c37d2
+  PATCHED_FETCHER: .github/scripts/patched/stats-fetcher.js
+  STATS_PATH: .github/assets/stats.svg
+  LANGS_PATH: .github/assets/top-langs.svg
+  USERNAME: Nour-yahyaoui
+  THEME: radical
+  PORT: "9000"
+
+jobs:
+  generate:
+    name: Generate and commit stats cards
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Checkout stats renderer at pinned commit
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.GENERATOR_REPO }}
+          ref: ${{ env.GENERATOR_SHA }}
+          path: .generator
+          persist-credentials: false
+
+      - name: Apply REST-stars patch to the fetcher
+        run: |
+          set -euo pipefail
+          cp "$PATCHED_FETCHER" ".generator/src/fetchers/stats.js"
+          # Fail loudly if the patch was not applied or touched anything else.
+          grep -qF "fetchStarsREST" ".generator/src/fetchers/stats.js" \
+            || { echo "::error::Patched fetcher missing fetchStarsREST"; exit 1; }
+          if grep -qF "stargazers {" ".generator/src/fetchers/stats.js"; then
+            echo "::error::GraphQL stargazers field still present in fetcher"
+            exit 1
+          fi
+          changed=$(git -C .generator status --porcelain | wc -l)
+          if [ "$changed" -ne 1 ]; then
+            echo "::error::Expected exactly 1 modified file in .generator, got $changed"
+            git -C .generator status --porcelain
+            exit 1
+          fi
+          echo "patched: $(git -C .generator status --porcelain)"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install renderer dependencies
+        working-directory: .generator
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Start local renderer server
+        working-directory: .generator
+        env:
+          PAT_1: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          nohup env PAT_1="${PAT_1}" PORT="${PORT}" node express.js \
+            > "$GITHUB_WORKSPACE/.generator-server.log" 2>&1 &
+          echo $! > "$GITHUB_WORKSPACE/.generator-server.pid"
+          for i in $(seq 1 30); do
+            if curl -s -o /dev/null "http://127.0.0.1:${PORT}/"; then
+              echo "renderer is up after ${i}s"
+              break
+            fi
+            sleep 1
+          done
+          curl -s -o /dev/null "http://127.0.0.1:${PORT}/" \
+            || { echo "::error::renderer did not start"; cat "$GITHUB_WORKSPACE/.generator-server.log"; exit 1; }
+
+      - name: Render stats and top-langs cards
+        run: |
+          set -euo pipefail
+          year="$(date -u +%Y)"
+          base="http://127.0.0.1:${PORT}/api"
+          mkdir -p "$(dirname "$STATS_PATH")"
+          curl -sf --retry 5 --retry-delay 5 --max-time 180 \
+            "${base}?username=${USERNAME}&commits_year=${year}&show_icons=true&theme=${THEME}" \
+            -o "$STATS_PATH"
+          curl -sf --retry 5 --retry-delay 5 --max-time 180 \
+            "${base}/top-langs/?username=${USERNAME}&layout=compact&langs_count=6&theme=${THEME}" \
+            -o "$LANGS_PATH"
+          echo "rendered with commits_year=${year}"
+
+      - name: Stop renderer server
+        if: always()
+        run: |
+          if [ -f "$GITHUB_WORKSPACE/.generator-server.pid" ]; then
+            kill "$(cat "$GITHUB_WORKSPACE/.generator-server.pid")" 2>/dev/null || true
+          fi
+
+      - name: Validate generated SVGs
+        run: |
+          set -euo pipefail
+          for f in "$STATS_PATH" "$LANGS_PATH"; do
+            if [ ! -s "$f" ]; then
+              echo "::error file=$f::Card was not generated (file missing or empty)."
+              exit 1
+            fi
+            size=$(wc -c < "$f")
+            head_bytes=$(head -c 400 "$f")
+            case "$head_bytes" in
+              *"<svg"*) ;;
+              *)
+                echo "::error file=$f::Output does not look like an SVG document."
+                head -c 400 "$f"
+                exit 1
+                ;;
+            esac
+            if grep -qiE "something went wrong|rate limit|maximum retries|not accessible" "$f"; then
+              echo "::error file=$f::Generator returned an error card instead of a real card."
+              exit 1
+            fi
+            echo "$f: ${size} bytes"
+          done
+          if [ "$(wc -c < "$STATS_PATH")" -lt 3000 ]; then
+            echo "::error::stats card is suspiciously small"
+            exit 1
+          fi
+          if [ "$(wc -c < "$LANGS_PATH")" -lt 2000 ]; then
+            echo "::error::top-langs card is suspiciously small"
+            exit 1
+          fi
+          grep -q "Total Stars Earned" "$STATS_PATH" \
+            || { echo "::error::stats card is missing its stat rows"; exit 1; }
+          grep -q "Most Used Languages" "$LANGS_PATH" \
+            || { echo "::error::top-langs card is missing its title"; exit 1; }
+          {
+            echo "### Stats cards regenerated"
+            echo ""
+            echo "- \`$STATS_PATH\`: $(wc -c < "$STATS_PATH") bytes"
+            echo "- \`$LANGS_PATH\`: $(wc -c < "$LANGS_PATH") bytes"
+            echo "- commits_year: \`$(date -u +%Y)\`"
+            echo "- Commit: \`${GITHUB_SHA}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit stats cards
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$STATS_PATH" "$LANGS_PATH"
+          if git diff --cached --quiet; then
+            echo "Stats cards are already up to date — nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore(assets): refresh stats.svg and top-langs.svg [skip ci]"
+          git push
