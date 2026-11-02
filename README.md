@@ -1,7 +1,11 @@
-<h1 align="center">Hiiiii 👋, I'm Nour Yahyaoui</h1>
+<h1 align="center">Hi 👋, I'm <b>Nour Yahyaoui</b></h1>
 
 <p align="center">
   <i>"AI power with the perfect leadership"</i>
+</p>
+
+<p align="center">
+  🎓 19-year-old full-stack developer from <b>Tunisia</b> · 3 years freelance/client experience · <b>Rust</b> · <b>Next.js</b> · <b>React Native</b> · <b>Ollama</b> · <b>Qwen</b> · <b>Supabase</b>
 </p>
 
 <div align="center">
@@ -19,24 +23,35 @@
 
 ---
 
-### 👨‍💻 About Me
+<details open>
+<summary>📑 Table of Contents</summary>
+
+- [About Me](#-about-me)
+- [GitHub Stats & Rankings](#-github-stats--rankings)
+- [Featured Projects](#-featured-projects)
+- [Tech Stack](#-tech-stack)
+- [Connect](#-connect)
+
+</details>
+
+---
+
+## 👨‍💻 About Me
 
 🎓 19-year-old full-stack developer from Tunisia with **3 years of freelance/client experience**.
 💻 I craft beautiful, secure, and scalable applications with modern technologies. From web and mobile to desktop, I turn complex problems into elegant solutions.
 
-**My Journey:**
-I began my coding journey with Python and web development fundamentals, and I've since progressed through JavaScript, React, and modern full-stack development with Next.js, React Native, and serverless architectures. I build production web apps end-to-end — frontend, backend, and deployment — and I'm currently expanding into **Rust (Actix Web / Axum & native systems)** to build performance-critical backend services and desktop software. What drives me is creating secure, scalable applications that solve real problems. Lately that also means building my own tooling from scratch: **RustPad**, a 4.96 MB zero-dependency pure-Rust desktop Word & PDF studio, and **nour-code**, a local AI coding agent that runs Qwen3 8B on Ollama and gives it audited, permission-checked access to real tools.
+**My Journey:** I began my coding journey with Python and web development fundamentals, and I've since progressed through JavaScript, React, and modern full-stack development with Next.js, React Native, and serverless architectures. I build production web apps end-to-end — frontend, backend, and deployment — and I'm currently expanding into **Rust (Actix Web / Axum & native systems)** to build performance-critical backend services and desktop software.
+
+What drives me is creating secure, scalable applications that solve real problems. Lately that also means building my own tooling from scratch: **RustPad**, a 4.96 MB zero-dependency pure-Rust desktop Word & PDF studio, and **nour-code**, a local AI coding agent that runs Qwen3 8B on Ollama and gives it audited, permission-checked access to real tools.
 
 📌 Check my pinned repos below for what I actually build — that's a better signal than any project count.
 
 ---
 
-### 📊 GitHub Stats & Rankings
+## 📊 GitHub Stats & Rankings
 
-<!-- stats.svg and top-langs.svg are rendered from live GitHub data by
-     .github/workflows/update-stats.yml and committed here. The public
-     github-readme-stats.vercel.app instance gets paused by Vercel
-     (503 DEPLOYMENT_PAUSED), which is what broke these cards before. -->
+<!-- stats.svg and top-langs.svg are rendered from live GitHub data by .github/workflows/update-stats.yml and committed here. The public github-readme-stats.vercel.app instance gets paused by Vercel (503 DEPLOYMENT_PAUSED), which is what broke these cards before. -->
 <p align="center">
   <img height="170" src=".github/assets/stats.svg" alt="Nour's GitHub stats" />
   <img height="170" src="https://streak-stats.demolab.com?user=Nour-yahyaoui&theme=radical&timezone=Africa%2FTunis" alt="GitHub contribution streak" />
@@ -53,7 +68,9 @@ I began my coding journey with Python and web development fundamentals, and I've
 
 ---
 
-### 📄 Featured Project: RustPad
+## 🚀 Featured Projects
+
+### 🦀 RustPad
 
 [![Version](https://img.shields.io/badge/version-3.0.0-DEA584?style=for-the-badge)](https://github.com/Nour-yahyaoui/rustpad/releases/tag/v3.0.0)
 [![Rust](https://img.shields.io/badge/Rust-100%25_pure-000000?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/Nour-yahyaoui/rustpad)
@@ -71,7 +88,7 @@ I began my coding journey with Python and web development fundamentals, and I've
 
 ---
 
-### 🚀 Featured Project: VexOS Desktop
+### 🖥️ VexOS Desktop
 
 [![Version](https://img.shields.io/badge/version-2.2.1-E95420?style=for-the-badge)](https://github.com/Nour-yahyaoui/vexos/releases)
 [![Debian](https://img.shields.io/badge/Debian-trixie-A81D33?style=for-the-badge&logo=debian&logoColor=white)](https://github.com/Nour-yahyaoui/vexos)
@@ -87,7 +104,7 @@ I began my coding journey with Python and web development fundamentals, and I've
 
 ---
 
-### 🤖 Featured Project: nour-code
+### 🤖 nour-code
 
 [![Version](https://img.shields.io/badge/version-1.3.0-3776AB?style=for-the-badge)](https://github.com/Nour-yahyaoui/nour-code)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/Nour-yahyaoui/nour-code)
@@ -99,16 +116,16 @@ I began my coding journey with Python and web development fundamentals, and I've
 
 - **Real tools, real guardrails:** `read_file`, `write_file`, `list_directory`, `search_files`, `run_shell`, `apply_patch`, `delete_file` — every path is validated against `permissions.yaml`, symlink escapes are rejected, shell commands run against an allow/deny list with timeouts, and every call is written to a JSONL audit trail.
 - **Hot-reloadable skills:** drop a Python file into the skills directory (or `POST /skills/reload`) and its tools join the model's tool list. Two ship in the box — `security_skill` (secret scanning, dangerous patterns, dependency CVEs) and `production_skill` (logging, error handling, input validation, Dockerfile, CI pipeline).
-- **Production-Ready Mode:** ask to *"make it production ready"* and the agent hardens every file it touches, refuses to hand back TODO stubs, and appends a readiness checklist.
+- **Production-Ready Mode:** ask to *make it production ready* and the agent hardens every file it touches, refuses to hand back TODO stubs, and appends a readiness checklist.
 - **Built like a service, not a script:** SSE token streaming, 2-hour sessions that survive restarts, rotating JSON logs, optional Prometheus metrics, async I/O end to end, and a 265-test offline suite.
 
 🔗 [Source and documentation](https://github.com/Nour-yahyaoui/nour-code)
 
 ---
 
-### 🧰 Tech Stack
+## 🧰 Tech Stack
 
-#### 🖥️ Frontend
+### 🖥️ Frontend
 *Building responsive, interactive UIs with modern frameworks*
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -117,11 +134,11 @@ I began my coding journey with Python and web development fundamentals, and I've
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logo=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-#### ⚙️ Backend
+### ⚙️ Backend
 *Scalable serverless APIs and database architecture*
 
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
@@ -135,52 +152,35 @@ I began my coding journey with Python and web development fundamentals, and I've
 ![Neon DB](https://img.shields.io/badge/Neon-00BFFF?style=for-the-badge&logo=neon&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-#### 🤖 AI & Agents
+### 🤖 AI & Agents
 *Local inference, tool-using agents and the guardrails around them*
 
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
 ![Qwen](https://img.shields.io/badge/Qwen3-615CED?style=for-the-badge&logo=alibabacloud&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![SSE](https://img.shields.io/badge/SSE_streaming-0A0A0A?style=for-the-badge&logo=sse&logoColor=white)
+![SSE streaming](https://img.shields.io/badge/SSE_streaming-0A0A0A?style=for-the-badge&logo=sse&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![Ruff](https://img.shields.io/badge/Ruff-D7FF64?style=for-the-badge&logo=ruff&logoColor=black)
 
-#### 📱 Mobile
+### 📱 Mobile
 *Native and cross-platform mobile applications*
 
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)eact Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
-#### ⚙️ Backend
-*Scalable serverless APIs and database architecture*
+---
 
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![REST APIs](https://img.shields.io/badge/REST_API-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socket.io&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Neon DB](https://img.shields.io/badge/Neon-00BFFF?style=for-the-badge&logo=neon&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+## 📫 Connect
 
-#### 🤖 AI & Agents
-*Local inference, tool-using agents and the guardrails around them*
+<p align="center">
+  <a href="https://github.com/Nour-yahyaoui"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://nour-yahyaoui.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+</p>
 
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
-![Qwen](https://img.shields.io/badge/Qwen3-615CED?style=for-the-badge&logo=alibabacloud&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![SSE](https://img.shields.io/badge/SSE_streaming-0A0A0A?style=for-the-badge&logo=sse&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-![Ruff](https://img.shields.io/badge/Ruff-D7FF64?style=for-the-badge&logo=ruff&logoColor=black)
+---
 
-#### 📱 Mobile
-*Native and cross-platform mobile applications*
-
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for
+<p align="center">
+  <i>Thanks for visiting my profile! 🚀</i>
+</p>
