@@ -1,0 +1,71 @@
+{
+  "_comment": "Card content for the profile README project grid. Stats are refreshed by .github/workflows/update-project-cards.yml; blurbs are static.",
+  "projects": [
+    {
+      "key": "rustpad",
+      "owner": "Nour-yahyaoui",
+      "repo": "rustpad",
+      "display": "RustPad",
+      "accent": "#DEA584",
+      "blurb": "Native desktop Word and PDF studio written in pure Rust — zero crates.io dependencies, 4.96 MB single binary.",
+      "language": "Rust",
+      "stars": 5,
+      "updated": "2026-11-03"
+    },
+    {
+      "key": "vexos",
+      "owner": "Nour-yahyaoui",
+      "repo": "vexos",
+      "display": "VexOS",
+      "accent": "#E95420",
+      "blurb": "Live Debian-based Linux desktop with a browser IDE, run button, live preview and an on-machine AI assistant.",
+      "language": "C",
+      "stars": 7,
+      "updated": "2026-10-23"
+    },
+    {
+      "key": "nour-code",
+      "owner": "Nour-yahyaoui",
+      "repo": "nour-code",
+      "display": "nour-code",
+      "accent": "#3776AB",
+      "blurb": "Local AI coding agent — Qwen3 8B on Ollama behind FastAPI, with permission-checked access to files and shell.",
+      "language": "Python",
+      "stars": 4,
+      "updated": "2026-10-21"
+    },
+    {
+      "key": "matjari",
+      "owner": "Nour-yahyaoui",
+      "repo": "matjari-web",
+      "display": "Matjari",
+      "accent": "#3FB950",
+      "blurb": "Full point-of-sale system for small and medium shops — sales, stock, orders, debts and employees.",
+      "language": "JavaScript",
+      "stars": 6,
+      "updated": "2026-10-21"
+    },
+    {
+      "key": "grafspee",
+      "owner": "Nour-yahyaoui",
+      "repo": "grafspee",
+      "display": "Grafspee",
+      "accent": "#A371F7",
+      "blurb": "60+ production-ready React and Next.js components in TypeScript — copy, paste, customise, ship faster.",
+      "language": "TypeScript",
+      "stars": 6,
+      "updated": "2026-03-26"
+    },
+    {
+      "key": "env-sentry",
+      "owner": "Nour-yahyaoui",
+      "repo": "env-sentry",
+      "display": "env-sentry",
+      "accent": "#39C5CF",
+      "blurb": "Zero-dependency CLI that catches .env drift, leaked secrets and missing .gitignore entries before you commit.",
+      "language": "Python",
+      "stars": 31,
+      "updated": "2026-10-23"
+    }
+  ]
+}

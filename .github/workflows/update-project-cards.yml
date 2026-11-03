@@ -1,0 +1,90 @@
+name: Update Project Cards
+
+# Refreshes .github/data/projects.json stats (stars, language, last push)
+# from the GitHub API, then regenerates the SVG cards in
+# .github/assets/cards/ and commits whatever changed.
+#
+# Same reasoning as update-stats.yml: the numbers live in the repo so the
+# README never depends on a third-party card service that can pause or get
+# rate-limited through GitHub's camo proxy.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * 1" # Mondays, 04:17 UTC
+  push:
+    paths:
+      - ".github/scripts/generate-project-cards.mjs"
+      - ".github/data/projects.json"
+      - ".github/workflows/update-project-cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-project-cards
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    name: Refresh stats and regenerate cards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh stats in projects.json
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          node --input-type=module -e '
+            import { readFileSync, writeFileSync } from "node:fs";
+            import { execFileSync } from "node:child_process";
+
+            const path = ".github/data/projects.json";
+            const data = JSON.parse(readFileSync(path, "utf8"));
+
+            for (const p of data.projects) {
+              const full = `${p.owner}/${p.repo}`;
+              let json;
+              try {
+                json = execFileSync(
+                  "gh",
+                  ["api", `repos/${full}`, "--jq",
+                   "{stars:.stargazers_count,language:.language,pushed:.pushed_at}"],
+                  { encoding: "utf8" }
+                );
+              } catch {
+                // A repo may be renamed or made private; keep the last known
+                // values rather than blanking the card.
+                console.warn(`skip ${full}: not readable with the workflow token`);
+                continue;
+              }
+              const meta = JSON.parse(json);
+              p.stars = meta.stars;
+              if (meta.language) p.language = meta.language;
+              if (meta.pushed) p.updated = meta.pushed.slice(0, 10);
+            }
+
+            writeFileSync(path, `${JSON.stringify(data, null, 2)}\n`);
+          '
+
+      - name: Regenerate cards
+        run: node .github/scripts/generate-project-cards.mjs
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- .github/data/projects.json .github/assets/cards; then
+            echo "Nothing to update."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/data/projects.json .github/assets/cards
+          git commit -m "chore(cards): refresh project stats [skip ci]"
+          git push
