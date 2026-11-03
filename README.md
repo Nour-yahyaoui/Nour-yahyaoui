@@ -23,18 +23,6 @@
 
 </div>
 
-<details open>
-<summary>📑 Table of Contents</summary>
-
-- [About Me](#-about-me)
-- [Featured Projects](#-featured-projects)
-- [Tech Stack](#-tech-stack)
-- [Certifications](#-certifications)
-- [GitHub Stats](#-github-stats)
-- [Connect](#-connect)
-
-</details>
-
 ---
 
 ## 👨‍💻 About Me
