@@ -10,6 +10,21 @@
   <sub>Rust &nbsp;·&nbsp; Next.js &nbsp;·&nbsp; React Native &nbsp;·&nbsp; Ollama &nbsp;·&nbsp; Qwen &nbsp;·&nbsp; Supabase</sub>
 </p>
 
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://user-badge.committers.top/tunisia/Nour-yahyaoui">
+        <img width="100%" src="https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" alt="Top committer ranking in Tunisia" />
+      </a>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://www.star-history.com/#Nour-yahyaoui">
+        <img width="100%" src="https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" alt="GitHub global ranking" />
+      </a>
+    </td>
+  </tr>
+</table>
+
 <p>
   <img src="https://img.shields.io/badge/Open_to-freelance_%26_collaboration-2EA44F?style=flat-square" alt="Open to freelance and collaboration" />
   <img src="https://img.shields.io/badge/Based_in-Tunisia-1F6FEB?style=flat-square" alt="Based in Tunisia" />
