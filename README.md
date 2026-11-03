@@ -1,21 +1,25 @@
-<h1 align="center">Hi 👋, I'm <b>Nour Yahyaoui</b></h1>
-
-<p align="center">
-  <b>Full-Stack Developer</b> · Tunisia · 3+ years freelance · <b>Rust</b> · <b>Next.js</b> · <b>React Native</b> · <b>Ollama</b> · <b>Qwen</b> · <b>Supabase</b>
-</p>
-
-<p align="center">
-  <i>"AI power with the perfect leadership"</i>
-</p>
-
 <div align="center">
-  <a href="https://user-badge.committers.top/tunisia/Nour-yahyaoui">
-    <img src="https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" alt="Top Committer Tunisia" />
-  </a>
-  &nbsp;
-  <a href="https://www.star-history.com/nour-yahyaoui">
-    <img src="https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" alt="Top Committer 2026" />
-  </a>
+
+  <h1>Hi 👋, I'm Nour Yahyaoui</h1>
+
+  <p>
+    <b>Full-Stack Developer</b> &nbsp;·&nbsp; Tunisia &nbsp;·&nbsp; 3+ years freelance
+  </p>
+
+  <p>
+    <sub>Rust &nbsp;·&nbsp; Next.js &nbsp;·&nbsp; React Native &nbsp;·&nbsp; Ollama &nbsp;·&nbsp; Qwen &nbsp;·&nbsp; Supabase</sub>
+  </p>
+
+  <p>
+    <a href="https://user-badge.committers.top/tunisia/Nour-yahyaoui">
+      <img height="26" src="https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" alt="Top committer in Tunisia" />
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://www.star-history.com/nour-yahyaoui">
+      <img height="26" src="https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" alt="Top committer 2026" />
+    </a>
+  </p>
+
 </div>
 
 <details open>
@@ -32,6 +36,8 @@
 ---
 
 ## 👨‍💻 About Me
+
+> *"AI power with the perfect leadership."*
 
 I'm **Nour Yahyaoui**, a 19-year-old full-stack developer from **Tunisia** with **3+ years of freelance and client experience**. I build beautiful, secure, and scalable applications — from web and mobile to desktop — turning complex problems into elegant solutions.
 
@@ -66,6 +72,62 @@ I'm **Nour Yahyaoui**, a 19-year-old full-stack developer from **Tunisia** with 
 
 ## 🚀 Featured Projects
 
+<p align="center">
+  <sub>Each card is a committed SVG that links to the repo. Two per row, and it follows your light/dark theme.</sub>
+</p>
+
+<p align="center">
+<a href="https://github.com/Nour-yahyaoui/rustpad">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/rustpad-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/rustpad-light.svg" />
+    <img width="410" alt="RustPad — Native desktop Word (.docx) & vector PDF (.pdf) studio — 4.96 MB, zero crates.io deps" src=".github/assets/cards/rustpad-dark.svg" />
+  </picture>
+</a>
+<a href="https://github.com/Nour-yahyaoui/vexos">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/vexos-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/vexos-light.svg" />
+    <img width="410" alt="VexOS Desktop — Live Linux desktop (Debian) with browser-based IDE, Run button, live preview, AI assistant" src=".github/assets/cards/vexos-dark.svg" />
+  </picture>
+</a>
+</p>
+<p align="center">
+<a href="https://github.com/Nour-yahyaoui/nour-code">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/nour-code-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/nour-code-light.svg" />
+    <img width="410" alt="nour-code — Local AI coding agent — Qwen3 8B on Ollama, FastAPI, permission-checked tool access" src=".github/assets/cards/nour-code-dark.svg" />
+  </picture>
+</a>
+<a href="https://github.com/Nour-yahyaoui/matjari-web">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/matjari-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/matjari-light.svg" />
+    <img width="410" alt="Matjari — Full POS system for small/medium shops — sales, stock, orders, debts, employees" src=".github/assets/cards/matjari-dark.svg" />
+  </picture>
+</a>
+</p>
+<p align="center">
+<a href="https://github.com/Nour-yahyaoui/grafspee">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/grafspee-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/grafspee-light.svg" />
+    <img width="410" alt="Grafspee — 60+ production-ready React/Next.js components — copy-paste, customize, build faster" src=".github/assets/cards/grafspee-dark.svg" />
+  </picture>
+</a>
+<a href="https://github.com/Nour-yahyaoui/env-sentry">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/env-sentry-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/env-sentry-light.svg" />
+    <img width="410" alt="env-sentry — Zero-dependency Python CLI — catches .env drift, leaked secrets, missing .gitignore entries" src=".github/assets/cards/env-sentry-dark.svg" />
+  </picture>
+</a>
+</p>
+
+<details>
+<summary>📋 Prefer plain text? Same projects as a table</summary>
+
 | Project | What it is | Stack | Full README |
 |---------|-----------|-------|-------------|
 | 🦀 **RustPad** | Native desktop Word (`.docx`) & vector PDF (`.pdf`) studio — 4.96 MB, zero `crates.io` deps | Rust, Win32/X11 | [Read full →](projects/rustpad/README.md) |
@@ -74,6 +136,8 @@ I'm **Nour Yahyaoui**, a 19-year-old full-stack developer from **Tunisia** with 
 | 🛒 **Matjari** | Full POS system for small/medium shops — sales, stock, orders, debts, employees | React, Vite, JavaScript | [Read full →](projects/matjari/README.md) |
 | ❄️ **WinterCave** | Latency-obsessed local text editor — native-caret editing, 12-language highlighting, one Rust binary, no Node/npm | Rust, Actix Web, Vanilla JS | [Read full →](projects/wintercave/README.md) |
 | 🛡️ **env-sentry** | Zero-dependency Python CLI — catches `.env` drift, leaked secrets, missing `.gitignore` entries | Python | [Read full →](projects/env-sentry/README.md) |
+
+</details>
 
 ---
 
