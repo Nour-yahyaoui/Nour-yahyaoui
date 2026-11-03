@@ -72,7 +72,7 @@ I'm **Nour Yahyaoui**, a 19-year-old full-stack developer from **Tunisia** with 
 | 🖥️ **VexOS Desktop** | Live Linux desktop (Debian) with browser-based IDE, Run button, live preview, AI assistant | Debian, XFCE, Rust, Python, Node | [Read full →](projects/vexos/README.md) |
 | 🤖 **nour-code** | Local AI coding agent — Qwen3 8B on Ollama, FastAPI, permission-checked tool access | Python, FastAPI, Ollama, Qwen | [Read full →](projects/nour-code/README.md) |
 | 🛒 **Matjari** | Full POS system for small/medium shops — sales, stock, orders, debts, employees | React, Vite, JavaScript | [Read full →](projects/matjari/README.md) |
-| 🧩 **Grafspee** | 60+ production-ready React/Next.js components — copy-paste, customize, build faster | Next.js, React, TypeScript, Tailwind | [Read full →](projects/grafspee/README.md) |
+| ❄️ **WinterCave** | Latency-obsessed local text editor — native-caret editing, 12-language highlighting, one Rust binary, no Node/npm | Rust, Actix Web, Vanilla JS | [Read full →](projects/wintercave/README.md) |
 | 🛡️ **env-sentry** | Zero-dependency Python CLI — catches `.env` drift, leaked secrets, missing `.gitignore` entries | Python | [Read full →](projects/env-sentry/README.md) |
 
 ---
