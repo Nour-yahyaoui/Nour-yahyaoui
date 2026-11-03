@@ -31,11 +31,6 @@
   <img src="https://img.shields.io/badge/Building_with-Rust-DEA584?style=flat-square&logo=rust&logoColor=black" alt="Building with Rust" />
 </p>
 
-<p>
-  <a href="https://nour-yahyaoui.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://github.com/Nour-yahyaoui"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-</p>
-
 </div>
 
 ---
@@ -133,7 +128,7 @@ I started with Python and web fundamentals, then moved through JavaScript, React
 
 ## 🧰 Tech Stack
 
-#### 🖥️ Frontend
+### 🖥️ Frontend
 *Building responsive, interactive UIs with modern frameworks*
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -146,7 +141,7 @@ I started with Python and web fundamentals, then moved through JavaScript, React
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-#### ⚙️ Backend
+### ⚙️ Backend
 *Scalable serverless APIs and database architecture*
 
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
@@ -160,7 +155,7 @@ I started with Python and web fundamentals, then moved through JavaScript, React
 ![Neon DB](https://img.shields.io/badge/Neon-00BFFF?style=for-the-badge&logo=neon&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-#### 🤖 AI & Agents
+### 🤖 AI & Agents
 *Local inference, tool-using agents and the guardrails around them*
 
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
@@ -171,7 +166,7 @@ I started with Python and web fundamentals, then moved through JavaScript, React
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![Ruff](https://img.shields.io/badge/Ruff-D7FF64?style=for-the-badge&logo=ruff&logoColor=black)
 
-#### 📱 Mobile
+### 📱 Mobile
 *Native and cross-platform mobile applications*
 
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -182,12 +177,8 @@ I started with Python and web fundamentals, then moved through JavaScript, React
 
 ## 🎓 Certifications
 
-<p align="center">
-
 | <img src="certificates/assets/linux-unhatched-badge.png" width="82" alt="Cisco Networking Academy — Verified" /> | **Linux Unhatched**<br><sub>Statement of Achievement · student level credential</sub> | Cisco Networking Academy<br><sub>in collaboration with NDG</sub> | Nov 2026 | [PDF ⧉](certificates/linux-unhatched.pdf) |
 |:--:|---|---|---:|:--:|
-
-</p>
 
 <sub>Covered: the Linux command line, filesystem navigation, creating and moving files, searching and extracting data, writing simple scripts, file permissions and ownership, user management, and querying network configuration.</sub>
 
