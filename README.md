@@ -1,21 +1,25 @@
-<h1 align="center">Hi 👋, I'm <b>Nour Yahyaoui</b></h1>
-
-<p align="center">
-  <b>Full-Stack Developer</b> · Tunisia · 3+ years freelance · <b>Rust</b> · <b>Next.js</b> · <b>React Native</b> · <b>Ollama</b> · <b>Qwen</b> · <b>Supabase</b>
-</p>
-
-<p align="center">
-  <i>"AI power with the perfect leadership"</i>
-</p>
-
 <div align="center">
-  <a href="https://user-badge.committers.top/tunisia/Nour-yahyaoui">
-    <img src="https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" alt="Top Committer Tunisia" />
-  </a>
-  &nbsp;
-  <a href="https://www.star-history.com/nour-yahyaoui">
-    <img src="https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" alt="Top Committer 2026" />
-  </a>
+
+  <h1>Hi 👋, I'm Nour Yahyaoui</h1>
+
+  <p>
+    <b>Full-Stack Developer</b> &nbsp;·&nbsp; Tunisia &nbsp;·&nbsp; 3+ years freelance
+  </p>
+
+  <p>
+    <sub>Rust &nbsp;·&nbsp; Next.js &nbsp;·&nbsp; React Native &nbsp;·&nbsp; Ollama &nbsp;·&nbsp; Qwen &nbsp;·&nbsp; Supabase</sub>
+  </p>
+
+  <p>
+    <a href="https://user-badge.committers.top/tunisia/Nour-yahyaoui">
+      <img height="26" src="https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" alt="Top committer in Tunisia" />
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://www.star-history.com/nour-yahyaoui">
+      <img height="26" src="https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" alt="Top committer 2026" />
+    </a>
+  </p>
+
 </div>
 
 <details open>
@@ -32,6 +36,8 @@
 ---
 
 ## 👨‍💻 About Me
+
+> *"AI power with the perfect leadership."*
 
 I'm **Nour Yahyaoui**, a 19-year-old full-stack developer from **Tunisia** with **3+ years of freelance and client experience**. I build beautiful, secure, and scalable applications — from web and mobile to desktop — turning complex problems into elegant solutions.
 
