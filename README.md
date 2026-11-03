@@ -109,11 +109,11 @@ I'm **Nour Yahyaoui**, a 19-year-old full-stack developer from **Tunisia** with 
 </a>
 </p>
 <p align="center">
-<a href="https://github.com/Nour-yahyaoui/grafspee">
+<a href="https://github.com/Nour-yahyaoui/WinterCave">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/grafspee-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/grafspee-light.svg" />
-    <img width="410" alt="Grafspee — 60+ production-ready React/Next.js components — copy-paste, customize, build faster" src=".github/assets/cards/grafspee-dark.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/wintercave-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/wintercave-light.svg" />
+    <img width="410" alt="WinterCave — Latency-obsessed local text editor with native-caret editing and one Rust binary" src=".github/assets/cards/wintercave-dark.svg" />
   </picture>
 </a>
 <a href="https://github.com/Nour-yahyaoui/env-sentry">

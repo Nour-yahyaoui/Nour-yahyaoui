@@ -46,15 +46,15 @@
       "updated": "2026-10-21"
     },
     {
-      "key": "grafspee",
+      "key": "wintercave",
       "owner": "Nour-yahyaoui",
-      "repo": "grafspee",
-      "display": "Grafspee",
-      "accent": "#A371F7",
-      "blurb": "60+ production-ready React and Next.js components in TypeScript — copy, paste, customise, ship faster.",
-      "language": "TypeScript",
-      "stars": 6,
-      "updated": "2026-03-26"
+      "repo": "WinterCave",
+      "display": "WinterCave",
+      "accent": "#7DD3FC",
+      "blurb": "Latency-obsessed local text editor — native-caret editing, 12-language highlighting, one Rust binary.",
+      "language": "Rust",
+      "stars": 1,
+      "updated": "2026-11-03"
     },
     {
       "key": "env-sentry",

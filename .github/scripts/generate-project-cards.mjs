@@ -16,7 +16,7 @@
  * longer match .github/data/projects.json.
  */
 
-import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, unlinkSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -277,7 +277,10 @@ if (check) {
   );
   for (const f of readdirSync(OUT)) {
     if (f.endsWith('.svg') && !expected.has(f)) {
-      console.log(`removing orphaned card ${f}`);
+      // Delete, don't just log: a card left behind for a project that is no
+      // longer in projects.json is dead weight and can be linked to by mistake.
+      unlinkSync(join(OUT, f));
+      console.log(`removed orphaned card ${f}`);
     }
   }
   console.log(`wrote ${projects.length * Object.keys(THEMES).length} cards to .github/assets/cards`);
