@@ -43,10 +43,10 @@
 
 I started with Python and web fundamentals, then moved through JavaScript, React, Next.js, React Native and serverless architectures. Today I build production apps end to end — frontend, backend and deployment — and I'm going deeper into **Rust (Actix Web / Axum and native systems)** for performance-critical services and desktop software.
 
-**Lately that means building my own tooling from scratch:**
+**Lately that means shipping full-stack platforms and building my own tooling from scratch:**
 
 - 🦀 **RustPad** — a zero-dependency pure-Rust desktop Word & PDF studio, compiled to a single 4.96 MB executable
-- ❄️ **WinterCave** — a latency-obsessed local text editor: one Rust binary, native caret, 12-language highlighting
+- 🏢 **AgencyOS** — a multi-tenant agency operations platform with a scoped client portal, Kanban delivery and Stripe billing
 - 🤖 **nour-code** — a local AI coding agent running Qwen3 8B on Ollama, with permission-checked access to real tools
 
 📌 The pinned repos below are the real signal — what I actually build beats any project count.
@@ -84,11 +84,11 @@ I started with Python and web fundamentals, then moved through JavaScript, React
       <img src=".github/assets/cards/nour-code-dark.svg" width="410" alt="nour-code — local AI coding agent on Ollama" />
     </picture>
   </a>
-  <a href="https://github.com/Nour-yahyaoui/WinterCave">
+  <a href="https://github.com/Nour-yahyaoui/agencyos">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/wintercave-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/wintercave-light.svg" />
-      <img src=".github/assets/cards/wintercave-dark.svg" width="410" alt="WinterCave — latency-obsessed local text editor in Rust" />
+      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/agencyos-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/agencyos-light.svg" />
+      <img src=".github/assets/cards/agencyos-dark.svg" width="410" alt="AgencyOS — multi-tenant operations platform for digital agencies" />
     </picture>
   </a>
 </p>
@@ -118,7 +118,7 @@ I started with Python and web fundamentals, then moved through JavaScript, React
 | 🦀 **RustPad** | Native desktop Word (`.docx`) & vector PDF (`.pdf`) studio — 4.96 MB, zero `crates.io` deps | Rust, Win32/X11 | [Read full →](projects/rustpad/README.md) |
 | 🖥️ **VexOS Desktop** | Live Linux desktop (Debian) with browser-based IDE, Run button, live preview, AI assistant | Debian, XFCE, Rust, Python, Node | [Read full →](projects/vexos/README.md) |
 | 🤖 **nour-code** | Local AI coding agent — Qwen3 8B on Ollama, FastAPI, permission-checked tool access | Python, FastAPI, Ollama, Qwen | [Read full →](projects/nour-code/README.md) |
-| ❄️ **WinterCave** | Latency-obsessed local text editor — native-caret editing, 12-language highlighting, one Rust binary, no Node/npm | Rust, Actix Web, Vanilla JS | [Read full →](projects/wintercave/README.md) |
+| 🏢 **AgencyOS** | Multi-tenant operations platform for digital agencies — clients, Kanban delivery, client portal, support, documents, Stripe billing | Next.js, NestJS, PostgreSQL, Prisma | [Read full →](projects/agencyos/README.md) |
 | 🛒 **Matjari** | Full POS system for small/medium shops — sales, stock, orders, debts, employees | React, Vite, JavaScript | [Read full →](projects/matjari/README.md) |
 | 🛡️ **env-sentry** | Zero-dependency Python CLI — catches `.env` drift, leaked secrets, missing `.gitignore` entries | Python | [Read full →](projects/env-sentry/README.md) |
 
@@ -209,7 +209,7 @@ I started with Python and web fundamentals, then moved through JavaScript, React
 <p align="center">
   <a href="https://github.com/Nour-yahyaoui"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="https://nour-yahyaoui.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://wintercave.vercel.app"><img src="https://img.shields.io/badge/WinterCave-0B1220?style=for-the-badge&logo=rust&logoColor=white" alt="WinterCave" /></a>
+  <a href="https://agencyos-web-beryl.vercel.app"><img src="https://img.shields.io/badge/AgencyOS-14624F?style=for-the-badge&logo=next.js&logoColor=white" alt="AgencyOS" /></a>
 </p>
 
 <p align="center">

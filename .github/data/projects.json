@@ -46,15 +46,15 @@
       "updated": "2026-10-21"
     },
     {
-      "key": "wintercave",
+      "key": "agencyos",
       "owner": "Nour-yahyaoui",
-      "repo": "WinterCave",
-      "display": "WinterCave",
-      "accent": "#7DD3FC",
-      "blurb": "Latency-obsessed local text editor — native-caret editing, 12-language highlighting, one Rust binary.",
-      "language": "Rust",
-      "stars": 1,
-      "updated": "2026-11-03"
+      "repo": "agencyos",
+      "display": "AgencyOS",
+      "accent": "#14624F",
+      "blurb": "Multi-tenant agency operations platform — clients, Kanban delivery, client portal, documents and Stripe billing.",
+      "language": "TypeScript",
+      "stars": 4,
+      "updated": "2026-11-08"
     },
     {
       "key": "env-sentry",
