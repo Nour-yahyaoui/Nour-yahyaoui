@@ -9,8 +9,8 @@
       "accent": "#DEA584",
       "blurb": "Native desktop Word and PDF studio written in pure Rust — zero crates.io dependencies, 4.96 MB single binary.",
       "language": "Rust",
-      "stars": 5,
-      "updated": "2026-11-03"
+      "stars": 7,
+      "updated": "2026-11-05"
     },
     {
       "key": "vexos",
@@ -42,7 +42,7 @@
       "accent": "#3FB950",
       "blurb": "Full point-of-sale system for small and medium shops — sales, stock, orders, debts and employees.",
       "language": "JavaScript",
-      "stars": 6,
+      "stars": 7,
       "updated": "2026-10-21"
     },
     {
