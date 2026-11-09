@@ -54,7 +54,7 @@
       "blurb": "Multi-tenant agency operations platform — clients, Kanban delivery, client portal, documents and Stripe billing.",
       "language": "TypeScript",
       "stars": 4,
-      "updated": "2026-11-08"
+      "updated": "2026-11-09"
     },
     {
       "key": "env-sentry",
