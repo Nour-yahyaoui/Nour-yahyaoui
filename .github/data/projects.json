@@ -10,7 +10,7 @@
       "blurb": "Native desktop Word and PDF studio written in pure Rust — zero crates.io dependencies, 4.96 MB single binary.",
       "language": "Rust",
       "stars": 7,
-      "updated": "2026-11-05"
+      "updated": "2026-11-15"
     },
     {
       "key": "vexos",
@@ -54,7 +54,7 @@
       "blurb": "Multi-tenant agency operations platform — clients, Kanban delivery, client portal, documents and Stripe billing.",
       "language": "TypeScript",
       "stars": 4,
-      "updated": "2026-11-09"
+      "updated": "2026-11-16"
     },
     {
       "key": "env-sentry",
