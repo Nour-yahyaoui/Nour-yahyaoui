@@ -40,7 +40,7 @@ const PROFILE = {
     { text: 'Pure-Rust native apps & zero-dep systems', tag: 'RUSTPAD', accent: 'rust' },
     { text: 'Local AI coding agents on Ollama & Qwen3', tag: 'NOUR-CODE', accent: 'violet' },
     { text: 'Multi-tenant platforms · Next.js & NestJS', tag: 'AGENCYOS', accent: 'cyan' },
-    { text: 'Top Committer · Tunisia #2 · Global #101', tag: 'TOP #101', accent: 'magenta' },
+    { text: 'Founder of the golden army org', tag: 'THE GOLDEN ARMY', accent: 'gold', tagWidth: 120 },
   ],
   chips: [
     { label: 'Rust', width: 68, dot: '#DEA584' },
@@ -105,6 +105,7 @@ const THEMES = {
       violet: { fg: '#d8b4fe', bg: '#a855f7', stroke: '#c084fc' },
       cyan: { fg: '#a9fef7', bg: '#06b6d4', stroke: '#38bdf8' },
       magenta: { fg: '#ff85b3', bg: '#fe428e', stroke: '#fe428e' },
+      gold: { fg: '#fde047', bg: '#eab308', stroke: '#facc15' },
     },
     chipBg: '#0d1528',
     chipBgOpacity: 0.76,
@@ -199,6 +200,7 @@ const THEMES = {
       violet: { fg: '#e9d5ff', bg: '#9333ea', stroke: '#c084fc' },
       cyan: { fg: '#a5f3fc', bg: '#0891b2', stroke: '#38bdf8' },
       magenta: { fg: '#fbcfe8', bg: '#db2777', stroke: '#f472b6' },
+      gold: { fg: '#fef08a', bg: '#ca8a04', stroke: '#facc15' },
     },
     chipBg: '#ffffff',
     chipBgOpacity: 0.90,
@@ -332,10 +334,13 @@ function buildHeader(themeName) {
   const termLinesSvg = PROFILE.terminalLines
     .map((line, i) => {
       const acc = t.accents[line.accent];
+      const tagW = line.tagWidth ?? 84;
+      const tagX = 550 - tagW;
+      const tagCx = tagX + tagW / 2;
       return `<g class="term-line term-line-${i}">
         <text x="86" y="205.5" font-family="${MONO}" font-size="12.5" fill="${t.termText}">${esc(line.text)}</text>
-        <rect x="466" y="188.5" width="84" height="24" rx="6" fill="${acc.bg}" fill-opacity="${t.tagBgOpacity}" stroke="${acc.stroke}" stroke-opacity="${t.tagStrokeOpacity}" stroke-width="1"/>
-        <text x="508" y="204" text-anchor="middle" font-family="${MONO}" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="${acc.fg}">${esc(line.tag)}</text>
+        <rect x="${tagX}" y="188.5" width="${tagW}" height="24" rx="6" fill="${acc.bg}" fill-opacity="${t.tagBgOpacity}" stroke="${acc.stroke}" stroke-opacity="${t.tagStrokeOpacity}" stroke-width="1"/>
+        <text x="${tagCx}" y="204" text-anchor="middle" font-family="${MONO}" font-size="9.2" font-weight="700" letter-spacing="0.6" fill="${acc.fg}">${esc(line.tag)}</text>
       </g>`;
     })
     .join('\n      ');
