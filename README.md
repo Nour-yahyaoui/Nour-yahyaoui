@@ -1,39 +1,40 @@
 <div align="center">
 
-<h1>Hiiiii 👋, I'm Nour Yahyaoui</h1>
+<a href="https://nour-yahyaoui.vercel.app">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/header-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset=".github/assets/header-light.svg" />
+    <img width="100%" src=".github/assets/header-dark.svg" alt="Nour Yahyaoui — Full-Stack & AI Systems Engineer" />
+  </picture>
+</a>
 
-<p>
-  <b>Full-stack developer</b> &nbsp;·&nbsp; Tunisia &nbsp;·&nbsp; 3+ years freelance
+<p align="center">
+  <a href="https://www.star-history.com/#Nour-yahyaoui">
+    <img height="60" src="https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" alt="GitHub Top Committer 2026 — Global Rank #101" />
+  </a>
 </p>
 
-<p>
-  <sub>Rust &nbsp;·&nbsp; Next.js &nbsp;·&nbsp; React Native &nbsp;·&nbsp; Ollama &nbsp;·&nbsp; Qwen &nbsp;·&nbsp; Supabase</sub>
+<p align="center">
+  <a href="https://user-badge.committers.top/tunisia/Nour-yahyaoui">
+    <img height="22" src="https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" alt="Top committer ranking in Tunisia" />
+  </a>
+  &nbsp;
+  <img height="22" src="https://img.shields.io/badge/Open_to-Freelance_%26_Collab-2EA44F?style=flat-square&labelColor=0d1117" alt="Open to freelance and collaboration" />
+  &nbsp;
+  <img height="22" src="https://img.shields.io/badge/Building_with-Rust-DEA584?style=flat-square&labelColor=0d1117&logo=rust&logoColor=DEA584" alt="Building with Rust" />
+  &nbsp;
+  <a href="https://nour-yahyaoui.vercel.app">
+    <img height="22" src="https://img.shields.io/badge/Portfolio-Live-7C3AED?style=flat-square&labelColor=0d1117&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
 </p>
 
-<table align="center" width="100%">
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://user-badge.committers.top/tunisia/Nour-yahyaoui">
-        <img width="100%" src="https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" alt="Top committer ranking in Tunisia" />
-      </a>
-    </td>
-    <td align="center" width="50%">
-      <a href="https://www.star-history.com/#Nour-yahyaoui">
-        <img width="100%" src="https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" alt="GitHub global ranking" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-<p>
-  <img src="https://img.shields.io/badge/Open_to-freelance_%26_collaboration-2EA44F?style=flat-square" alt="Open to freelance and collaboration" />
-  <img src="https://img.shields.io/badge/Based_in-Tunisia-1F6FEB?style=flat-square" alt="Based in Tunisia" />
-  <img src="https://img.shields.io/badge/Building_with-Rust-DEA584?style=flat-square&logo=rust&logoColor=black" alt="Building with Rust" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/divider-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset=".github/assets/divider-light.svg" />
+  <img width="100%" src=".github/assets/divider-dark.svg" alt="" />
+</picture>
 
 </div>
-
----
 
 ## 👨‍💻 About Me
 
@@ -145,8 +146,10 @@ I started with Python and web fundamentals, then moved through JavaScript, React
 *Scalable serverless APIs and database architecture*
 
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Actix Web](https://img.shields.io/badge/Actix_Web-000000?style=for-the-badge&logo=rust&logoColor=DEA584)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![REST APIs](https://img.shields.io/badge/REST_API-FF6C37?style=for-the-badge&logo=postman&logoColor=white)

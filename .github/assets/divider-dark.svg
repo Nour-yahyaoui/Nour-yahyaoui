@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="18" viewBox="0 0 960 18" fill="none" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="div-line" x1="20" y1="0" x2="940" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1f6feb" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#1f6feb" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#a9fef7" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#fe428e" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#fe428e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="div-beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="div-glow" x="-20%" y="-200%" width="140%" height="500%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="20" y="8.25" width="920" height="1.5" rx="0.75" fill="url(#div-line)"/>
+
+  <!-- Gliding luminous pulse -->
+  <rect x="-140" y="7.9" width="140" height="2.2" rx="1.1" fill="url(#div-beam)" filter="url(#div-glow)">
+    <animate attributeName="x" values="-160; 980; 980" keyTimes="0; 0.55; 1" dur="5.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Center crystal diamond -->
+  <path d="M 480 4 L 485 9 L 480 14 L 475 9 Z" fill="#a9fef7" filter="url(#div-glow)"/>
+</svg>

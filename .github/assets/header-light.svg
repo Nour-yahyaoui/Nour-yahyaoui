@@ -1,0 +1,500 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="350" viewBox="0 0 960 350" fill="none" role="img" aria-label="Nour Yahyaoui — Full-Stack and AI Systems Engineer">
+  <title>Nour Yahyaoui — Full-Stack &amp; AI Systems Engineer</title>
+  <defs>
+    <clipPath id="card-clip">
+      <rect x="0" y="0" width="960" height="350" rx="18"/>
+    </clipPath>
+    <clipPath id="term-clip">
+      <rect x="78" y="179" width="480" height="44" rx="6"/>
+    </clipPath>
+    <clipPath id="term-box-clip">
+      <rect x="48" y="176" width="516" height="50" rx="11"/>
+    </clipPath>
+
+    <!-- Base obsidian / pearl backdrop -->
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="960" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f5f9ff"/>
+      <stop offset="50%" stop-color="#eaf2ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <!-- Overhead specular sapphire glass sheen (permanent subtle studio reflection) -->
+    <linearGradient id="glass-flare" x1="0%" y1="0%" x2="55%" y2="85%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.26"/>
+      <stop offset="42%" stop-color="#06b6d4" stop-opacity="0.117"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Aurora luminous radial glows -->
+    <radialGradient id="orb-blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.28"/>
+      <stop offset="52%" stop-color="#06b6d4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-violet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.26"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-rust" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Liquid-aurora silk ribbons -->
+    <linearGradient id="ribbon-a" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#06b6d4" stop-opacity="0.9"/>
+      <stop offset="62%" stop-color="#8b5cf6" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ribbon-b" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0"/>
+      <stop offset="32%" stop-color="#ec4899" stop-opacity="0.78"/>
+      <stop offset="70%" stop-color="#06b6d4" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Animated liquid-chrome metallic shimmer across hero name -->
+    <linearGradient id="name-chrome" x1="-100%" y1="0%" x2="100%" y2="0%" spreadMethod="repeat">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="26%" stop-color="#1e293b"/>
+      <stop offset="38%" stop-color="#0284c7"/>
+      <stop offset="48%" stop-color="#0f172a"/>
+      <stop offset="72%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="1 0" dur="5.2s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Role & terminal scan gradients -->
+    <linearGradient id="role-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="52%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    <linearGradient id="term-progress" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="65%" stop-color="#818cf8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- Orbital luminous arc gradients -->
+    <linearGradient id="arc-neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="55%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="arc-rust" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DEA584"/>
+      <stop offset="60%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <!-- Core hexagon glass & monogram -->
+    <linearGradient id="hex-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dceaff"/>
+    </linearGradient>
+    <linearGradient id="monogram-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <!-- Specular rim lights & diagonal glass sheen -->
+    <linearGradient id="rim-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#06b6d4" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#ec4899" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bottom-rim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.4"/>
+      <stop offset="82%" stop-color="#ec4899" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glass-sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.72"/>
+      <stop offset="36%" stop-color="#818cf8" stop-opacity="0.56"/>
+      <stop offset="70%" stop-color="#f472b6" stop-opacity="0.52"/>
+      <stop offset="100%" stop-color="#cbd5e1" stop-opacity="0.61"/>
+    </linearGradient>
+
+    <!-- Architectural micro-grid pattern with spotlight fade mask -->
+    <pattern id="grid-pat" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1d4ed8" stroke-width="0.7" stroke-opacity="0.09"/>
+      <circle cx="0" cy="0" r="1.1" fill="#1d4ed8" fill-opacity="0.17"/>
+    </pattern>
+    <radialGradient id="grid-fade" cx="62%" cy="46%" r="58%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="62%" stop-color="#ffffff" stop-opacity="0.48"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="grid-mask">
+      <rect width="960" height="350" fill="url(#grid-fade)"/>
+    </mask>
+
+    <!-- Soft glow filters -->
+    <filter id="aurora-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="ribbon-blur" x="-15%" y="-40%" width="130%" height="180%">
+      <feGaussianBlur stdDeviation="11"/>
+    </filter>
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="text-glow" x="-15%" y="-35%" width="130%" height="170%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes driftA {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(24px, 14px); }
+    }
+    @keyframes driftB {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(-22px, -16px); }
+    }
+    @keyframes ping {
+      0% { transform: scale(1); opacity: 0.85; }
+      75%, 100% { transform: scale(2.6); opacity: 0; }
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.22; }
+      50% { opacity: 0.94; }
+    }
+    @keyframes sparklePulse {
+      0%, 100% { opacity: 0.28; }
+      50% { opacity: 0.98; }
+    }
+    @keyframes pulseLine {
+      0% { stroke-dashoffset: 320; opacity: 0; }
+      15% { opacity: 0.95; }
+      80% { opacity: 0.85; }
+      100% { stroke-dashoffset: -120; opacity: 0; }
+    }
+    /* 4-line seamless terminal cycle (16s total). Line 0 visible at 0% for static previews. */
+    @keyframes cycle0 {
+      0%, 20% { opacity: 1; transform: translateY(0px); }
+      25%, 95% { opacity: 0; transform: translateY(-10px); }
+      96% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0px); }
+    }
+    @keyframes cycle1 {
+      0%, 21% { opacity: 0; transform: translateY(10px); }
+      25%, 45% { opacity: 1; transform: translateY(0px); }
+      50%, 100% { opacity: 0; transform: translateY(-10px); }
+    }
+    @keyframes cycle2 {
+      0%, 46% { opacity: 0; transform: translateY(10px); }
+      50%, 70% { opacity: 1; transform: translateY(0px); }
+      75%, 100% { opacity: 0; transform: translateY(-10px); }
+    }
+    @keyframes cycle3 {
+      0%, 71% { opacity: 0; transform: translateY(10px); }
+      75%, 95% { opacity: 1; transform: translateY(0px); }
+      100% { opacity: 0; transform: translateY(-10px); }
+    }
+
+    .aurora-a { animation: driftA 12s ease-in-out infinite; }
+    .aurora-b { animation: driftB 15s ease-in-out infinite; }
+    .ping-ring { transform-box: fill-box; transform-origin: center; animation: ping 2.4s cubic-bezier(0, 0, 0.2, 1) infinite; }
+    .twinkle { animation: twinkle 3.6s ease-in-out infinite; }
+    .sparkle { animation: sparklePulse 4.2s ease-in-out infinite; }
+    .circuit-pulse-1 { stroke-dasharray: 44 276; animation: pulseLine 4.6s linear infinite; }
+    .circuit-pulse-2 { stroke-dasharray: 38 282; animation: pulseLine 5.8s linear 1.9s infinite; }
+    .circuit-pulse-3 { stroke-dasharray: 32 288; animation: pulseLine 6.4s linear 3.2s infinite; }
+    .term-line { will-change: opacity, transform; }
+    .term-line-0 { opacity: 1; animation: cycle0 16s ease-in-out infinite; }
+    .term-line-1 { opacity: 0; animation: cycle1 16s ease-in-out infinite; }
+    .term-line-2 { opacity: 0; animation: cycle2 16s ease-in-out infinite; }
+    .term-line-3 { opacity: 0; animation: cycle3 16s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .aurora-a, .aurora-b, .ping-ring, .twinkle, .sparkle,
+      .circuit-pulse-1, .circuit-pulse-2, .circuit-pulse-3,
+      .term-line-0, .term-line-1, .term-line-2, .term-line-3 {
+        animation: none;
+      }
+      .term-line-0 { opacity: 1; }
+      .term-line-1, .term-line-2, .term-line-3 { opacity: 0; }
+    }
+  </style>
+
+  <g clip-path="url(#card-clip)">
+    <!-- Layer 1: Base canvas, shiny aurora mesh & studio glass reflection -->
+    <rect width="960" height="350" fill="url(#bg-grad)"/>
+
+    <g filter="url(#aurora-blur)">
+      <ellipse class="aurora-a" cx="220" cy="60" rx="300" ry="165" fill="url(#orb-blue)"/>
+      <ellipse class="aurora-b" cx="772" cy="176" rx="245" ry="190" fill="url(#orb-violet)"/>
+      <ellipse class="aurora-a" cx="555" cy="316" rx="280" ry="140" fill="url(#orb-cyan)"/>
+      <ellipse class="aurora-b" cx="798" cy="200" rx="130" ry="108" fill="url(#orb-rust)"/>
+    </g>
+
+    <!-- Iridescent silk light ribbons -->
+    <g filter="url(#ribbon-blur)" opacity="0.3">
+      <path d="M -40 278 C 190 198, 410 310, 660 156 C 790 76, 890 112, 1000 68" stroke="url(#ribbon-a)" stroke-width="28" stroke-linecap="round"/>
+      <path d="M -30 96 C 210 154, 445 36, 705 210 C 815 284, 905 244, 1000 220" stroke="url(#ribbon-b)" stroke-width="20" stroke-linecap="round"/>
+    </g>
+
+    <!-- Permanent subtle overhead studio glass flare (soft feathered edge) -->
+    <polygon points="0,0 590,0 320,350 0,350" fill="url(#glass-flare)" filter="url(#ribbon-blur)"/>
+
+    <!-- Layer 2: Precision micro-grid, circuit fiber trails & stars -->
+    <rect width="960" height="350" fill="url(#grid-pat)" mask="url(#grid-mask)"/>
+
+    <g opacity="0.92">
+      <!-- Base subtle circuit paths connecting left identity to right core -->
+      <path d="M 564 198 L 624 198 L 646 176 L 676 176" stroke="#2563eb" stroke-opacity="0.16" stroke-width="1.2"/>
+      <path d="M 602 262 L 642 262 L 674 224 L 698 224" stroke="#2563eb" stroke-opacity="0.16" stroke-width="1.2"/>
+      <path d="M 326 47 L 548 47 L 598 97 L 682 97" stroke="#2563eb" stroke-opacity="0.16" stroke-width="1.1"/>
+      <!-- Glowing animated data pulses traveling along the circuits -->
+      <path d="M 564 198 L 624 198 L 646 176 L 676 176" stroke="#0284c7" stroke-width="1.9" stroke-linecap="round" class="circuit-pulse-1" filter="url(#soft-glow)"/>
+      <path d="M 602 262 L 642 262 L 674 224 L 698 224" stroke="#ec4899" stroke-width="1.9" stroke-linecap="round" class="circuit-pulse-2" filter="url(#soft-glow)"/>
+      <path d="M 326 47 L 548 47 L 598 97 L 682 97" stroke="#0284c7" stroke-width="1.6" stroke-linecap="round" class="circuit-pulse-3" filter="url(#soft-glow)"/>
+      <!-- Circuit terminal micro-nodes -->
+      <circle cx="676" cy="176" r="2.6" fill="#0284c7" opacity="0.85"/>
+      <circle cx="698" cy="224" r="2.4" fill="#ec4899" opacity="0.8"/>
+      <circle cx="682" cy="97" r="2.2" fill="#0284c7" opacity="0.75"/>
+    </g>
+
+    <!-- Twinkling starfield & specular glints -->
+    <g>
+      <circle cx="743.8" cy="298.5" r="1.6" fill="#2563eb" opacity="0.80" class="twinkle" style="animation-delay:0.12s;animation-duration:4.25s"/>
+      <circle cx="791.3" cy="257.3" r="1.4" fill="#2563eb" opacity="0.53" class="twinkle" style="animation-delay:1.55s;animation-duration:3.26s"/>
+      <circle cx="829.4" cy="98.5" r="1.8" fill="#2563eb" opacity="0.50" class="twinkle" style="animation-delay:2.94s;animation-duration:5.39s"/>
+      <circle cx="828.0" cy="231.9" r="1.1" fill="#2563eb" opacity="0.53" class="twinkle" style="animation-delay:3.09s;animation-duration:4.16s"/>
+      <circle cx="637.5" cy="271.9" r="0.9" fill="#2563eb" opacity="0.61" class="twinkle" style="animation-delay:1.03s;animation-duration:4.89s"/>
+      <circle cx="73.8" cy="321.2" r="1.8" fill="#2563eb" opacity="0.52" class="twinkle" style="animation-delay:4.16s;animation-duration:4.31s"/>
+      <circle cx="860.8" cy="267.6" r="1.2" fill="#2563eb" opacity="0.53" class="twinkle" style="animation-delay:0.55s;animation-duration:2.83s"/>
+      <circle cx="552.1" cy="319.3" r="1.3" fill="#2563eb" opacity="0.61" class="twinkle" style="animation-delay:3.69s;animation-duration:4.46s"/>
+      <circle cx="542.0" cy="315.4" r="1.5" fill="#2563eb" opacity="0.62" class="twinkle" style="animation-delay:3.74s;animation-duration:5.56s"/>
+      <circle cx="751.2" cy="258.4" r="0.9" fill="#2563eb" opacity="0.55" class="twinkle" style="animation-delay:0.67s;animation-duration:4.09s"/>
+      <circle cx="681.7" cy="272.2" r="1.8" fill="#2563eb" opacity="0.69" class="twinkle" style="animation-delay:1.52s;animation-duration:4.58s"/>
+      <circle cx="394.3" cy="320.7" r="1.7" fill="#2563eb" opacity="0.60" class="twinkle" style="animation-delay:2.31s;animation-duration:4.11s"/>
+      <circle cx="809.2" cy="112.7" r="1.7" fill="#2563eb" opacity="0.53" class="twinkle" style="animation-delay:2.61s;animation-duration:3.05s"/>
+      <circle cx="716.8" cy="290.6" r="1.3" fill="#2563eb" opacity="0.83" class="twinkle" style="animation-delay:1.77s;animation-duration:5.08s"/>
+      <circle cx="850.0" cy="329.5" r="1.1" fill="#2563eb" opacity="0.30" class="twinkle" style="animation-delay:2.04s;animation-duration:3.64s"/>
+      <circle cx="893.7" cy="307.9" r="1.3" fill="#2563eb" opacity="0.56" class="twinkle" style="animation-delay:2.35s;animation-duration:3.81s"/>
+      <circle cx="765.0" cy="232.5" r="1.9" fill="#2563eb" opacity="0.33" class="twinkle" style="animation-delay:4.49s;animation-duration:3.72s"/>
+      <circle cx="842.2" cy="199.8" r="1.8" fill="#2563eb" opacity="0.58" class="twinkle" style="animation-delay:1.35s;animation-duration:3.02s"/>
+      <circle cx="660.3" cy="216.7" r="1.1" fill="#2563eb" opacity="0.68" class="twinkle" style="animation-delay:0.40s;animation-duration:4.93s"/>
+      <path d="M 586 32.5 Q 586 40 593.5 40 Q 586 40 586 47.5 Q 586 40 578.5 40 Q 586 40 586 32.5 Z" fill="#2563eb" opacity="0.78" class="sparkle" style="animation-delay:0.2s"/>
+      <path d="M 916 119.5 Q 916 126 922.5 126 Q 916 126 916 132.5 Q 916 126 909.5 126 Q 916 126 916 119.5 Z" fill="#2563eb" opacity="0.78" class="sparkle" style="animation-delay:1.6s"/>
+      <path d="M 632 297.0 Q 632 304 639.0 304 Q 632 304 632 311.0 Q 632 304 625.0 304 Q 632 304 632 297.0 Z" fill="#2563eb" opacity="0.78" class="sparkle" style="animation-delay:2.8s"/>
+      <path d="M 462 36.5 Q 462 42 467.5 42 Q 462 42 462 47.5 Q 462 42 456.5 42 Q 462 42 462 36.5 Z" fill="#2563eb" opacity="0.78" class="sparkle" style="animation-delay:3.7s"/>
+    </g>
+
+    <!-- Layer 3: Left Executive Identity & Live Terminal -->
+    <!-- Top-right telemetry coordinates -->
+    <text x="926" y="30" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" letter-spacing="1.4" fill="#64748b" opacity="0.9">36.8°N · 10.2°E</text>
+
+    <!-- Availability status glass pill -->
+    <g transform="translate(48, 34)">
+      <rect width="268" height="26" rx="13" fill="#ffffff" fill-opacity="0.88" stroke="#3b82f6" stroke-opacity="0.34" stroke-width="1"/>
+      <circle cx="16" cy="13" r="4.2" fill="#10b981" opacity="0.55" class="ping-ring"/>
+      <circle cx="16" cy="13" r="3.6" fill="#10b981"/>
+      <text x="29" y="16.8" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="10.2" font-weight="600" letter-spacing="1.15" fill="#1e293b">OPEN FOR FREELANCE  ·  TUNISIA</text>
+    </g>
+
+    <!-- Hero Display Name with luminous glow + animated chrome shimmer -->
+    <text x="48" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="46" font-weight="800" letter-spacing="-0.6" fill="#38bdf8" opacity="0.18" filter="url(#text-glow)">NOUR YAHYAOUI</text>
+    <text x="48" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="46" font-weight="800" letter-spacing="-0.6" fill="url(#name-chrome)">NOUR YAHYAOUI</text>
+
+    <!-- Commanding role & tenure subtitle -->
+    <text x="49" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="16" font-weight="600" fill="#1e293b">Full-Stack &amp; <tspan fill="url(#role-grad)" font-weight="700">AI Systems Engineer</tspan><tspan fill="#64748b" font-weight="500" font-size="14">  ·  3+ yrs shipping end-to-end</tspan></text>
+
+    <!-- Special Piece #1: Live Animated Glass Terminal Bar -->
+    <g>
+      <rect x="48" y="176" width="516" height="50" rx="11" fill="#0f172a" fill-opacity="0.94" stroke="#3b82f6" stroke-opacity="0.38" stroke-width="1"/>
+      <!-- Top inner glass reflection on terminal -->
+      <line x1="62" y1="177" x2="550" y2="177" stroke="#7dd3fc" stroke-opacity="0.48" stroke-width="1"/>
+      <!-- Prompt chevron -->
+      <text x="64" y="205.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14" font-weight="700" fill="#38bdf8">❯</text>
+      <!-- Cycling status lines -->
+      <g clip-path="url(#term-clip)">
+        <g class="term-line term-line-0">
+        <text x="86" y="205.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#f1f5f9">Pure-Rust native apps &amp; zero-dep systems</text>
+        <rect x="466" y="188.5" width="84" height="24" rx="6" fill="#ea580c" fill-opacity="0.22" stroke="#fb923c" stroke-opacity="0.55" stroke-width="1"/>
+        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#fdba74">RUSTPAD</text>
+      </g>
+      <g class="term-line term-line-1">
+        <text x="86" y="205.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#f1f5f9">Local AI coding agents on Ollama &amp; Qwen3</text>
+        <rect x="466" y="188.5" width="84" height="24" rx="6" fill="#9333ea" fill-opacity="0.22" stroke="#c084fc" stroke-opacity="0.55" stroke-width="1"/>
+        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#e9d5ff">NOUR-CODE</text>
+      </g>
+      <g class="term-line term-line-2">
+        <text x="86" y="205.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#f1f5f9">Multi-tenant platforms · Next.js &amp; NestJS</text>
+        <rect x="466" y="188.5" width="84" height="24" rx="6" fill="#0891b2" fill-opacity="0.22" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1"/>
+        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#a5f3fc">AGENCYOS</text>
+      </g>
+      <g class="term-line term-line-3">
+        <text x="86" y="205.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#f1f5f9">Top Committer · Tunisia #2 · Global #101</text>
+        <rect x="466" y="188.5" width="84" height="24" rx="6" fill="#db2777" fill-opacity="0.22" stroke="#f472b6" stroke-opacity="0.55" stroke-width="1"/>
+        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#fbcfe8">TOP #101</text>
+      </g>
+      </g>
+      <!-- Animated neon cycle progress scan bar along bottom bevel of terminal -->
+      <g clip-path="url(#term-box-clip)">
+        <rect x="48" y="224" width="160" height="2" fill="url(#term-progress)" filter="url(#soft-glow)">
+          <animate attributeName="width" values="18; 516" dur="4s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+
+    <!-- Tech Stack Glass Chips -->
+    <g>
+      <g transform="translate(48, 248)">
+        <rect width="68" height="28" rx="14" fill="#ffffff" fill-opacity="0.9" stroke="#94a3b8" stroke-opacity="0.42" stroke-width="1"/>
+        <circle cx="14" cy="14" r="3.3" fill="#DEA584"/>
+        <text x="24" y="17.8" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="600" fill="#0f172a">Rust</text>
+      </g>
+      <g transform="translate(123, 248)">
+        <rect width="88" height="28" rx="14" fill="#ffffff" fill-opacity="0.9" stroke="#94a3b8" stroke-opacity="0.42" stroke-width="1"/>
+        <circle cx="14" cy="14" r="3.3" fill="#0f172a"/>
+        <text x="24" y="17.8" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="600" fill="#0f172a">Next.js</text>
+      </g>
+      <g transform="translate(218, 248)">
+        <rect width="124" height="28" rx="14" fill="#ffffff" fill-opacity="0.9" stroke="#94a3b8" stroke-opacity="0.42" stroke-width="1"/>
+        <circle cx="14" cy="14" r="3.3" fill="#61DAFB"/>
+        <text x="24" y="17.8" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="600" fill="#0f172a">React Native</text>
+      </g>
+      <g transform="translate(349, 248)">
+        <rect width="140" height="28" rx="14" fill="#ffffff" fill-opacity="0.9" stroke="#94a3b8" stroke-opacity="0.42" stroke-width="1"/>
+        <circle cx="14" cy="14" r="3.3" fill="#c084fc"/>
+        <text x="24" y="17.8" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="600" fill="#0f172a">Ollama · Qwen3</text>
+      </g>
+      <g transform="translate(496, 248)">
+        <rect width="96" height="28" rx="14" fill="#ffffff" fill-opacity="0.9" stroke="#94a3b8" stroke-opacity="0.42" stroke-width="1"/>
+        <circle cx="14" cy="14" r="3.3" fill="#3ECF8E"/>
+        <text x="24" y="17.8" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="600" fill="#0f172a">Supabase</text>
+      </g>
+    </g>
+
+    <!-- Signature Motto Line -->
+    <g transform="translate(49, 313)">
+      <path d="M 4 -8 L 8 -4 L 4 0 L 0 -4 Z" fill="#2563eb" opacity="0.92"/>
+      <text x="16" y="-0.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" font-style="italic" letter-spacing="0.3" fill="#475569">“AI power with the perfect leadership.”</text>
+    </g>
+
+    <!-- Layer 4: Special Piece #2 — Luminous Animated Quantum Systems Core -->
+    <g>
+      <!-- Outer precision telemetry ring (clockwise slow rotation) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 772 176" to="360 772 176" dur="48s" repeatCount="indefinite"/>
+        <circle cx="772" cy="176" r="110" stroke="#2563eb" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="3 7"/>
+        <line x1="772" y1="59" x2="772" y2="72" stroke="#2563eb" stroke-opacity="0.6" stroke-width="1.4"/>
+        <line x1="772" y1="280" x2="772" y2="293" stroke="#2563eb" stroke-opacity="0.6" stroke-width="1.4"/>
+        <line x1="655" y1="176" x2="668" y2="176" stroke="#2563eb" stroke-opacity="0.6" stroke-width="1.4"/>
+        <line x1="876" y1="176" x2="889" y2="176" stroke="#2563eb" stroke-opacity="0.6" stroke-width="1.4"/>
+      </g>
+
+      <!-- Counter-rotating glowing neon energy arcs -->
+      <g filter="url(#soft-glow)">
+        <animateTransform attributeName="transform" type="rotate" from="360 772 176" to="0 772 176" dur="18s" repeatCount="indefinite"/>
+        <circle cx="772" cy="176" r="91" stroke="url(#arc-neon)" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="122 453"/>
+        <circle cx="772" cy="176" r="91" stroke="url(#arc-rust)" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="74 501" stroke-dashoffset="-285"/>
+      </g>
+
+      <!-- Tilted 3D Gyroscopic Orbit #1 (+32 deg) with glowing photon streak comet -->
+      <g transform="translate(772 176) rotate(32) scale(1 0.36)">
+        <circle cx="0" cy="0" r="114" stroke="#2563eb" stroke-opacity="0.26" stroke-width="2"/>
+        <g filter="url(#soft-glow)">
+          <animateTransform attributeName="transform" type="rotate" from="18 0 0" to="378 0 0" dur="9.5s" repeatCount="indefinite"/>
+          <circle cx="0" cy="0" r="114" stroke="#0284c7" stroke-width="4.2" stroke-linecap="round" stroke-dasharray="36 682"/>
+          <circle cx="0" cy="0" r="114" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="8 710" stroke-dashoffset="-28"/>
+        </g>
+      </g>
+
+      <!-- Tilted 3D Gyroscopic Orbit #2 (-32 deg) with glowing magenta photon streak comet -->
+      <g transform="translate(772 176) rotate(-32) scale(1 0.36)">
+        <circle cx="0" cy="0" r="114" stroke="#ec4899" stroke-opacity="0.26" stroke-width="2"/>
+        <g filter="url(#soft-glow)">
+          <animateTransform attributeName="transform" type="rotate" from="202 0 0" to="-158 0 0" dur="12.5s" repeatCount="indefinite"/>
+          <circle cx="0" cy="0" r="114" stroke="#db2777" stroke-width="4.2" stroke-linecap="round" stroke-dasharray="36 682"/>
+          <circle cx="0" cy="0" r="114" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="8 710" stroke-dashoffset="-28"/>
+        </g>
+      </g>
+
+      <!-- Inner faceted hexagonal sapphire crystal emblem -->
+      <g>
+        <polygon points="772.00,123.00 817.90,149.50 817.90,202.50 772.00,229.00 726.10,202.50 726.10,149.50" fill="url(#hex-bg)" fill-opacity="0.94" stroke="url(#arc-neon)" stroke-width="2" filter="url(#soft-glow)"/>
+        <polygon points="772.00,134.00 808.37,155.00 808.37,197.00 772.00,218.00 735.63,197.00 735.63,155.00" fill="#f1f6ff" fill-opacity="0.74" stroke="#2563eb" stroke-opacity="0.34" stroke-width="1"/>
+        <!-- Crystal specular top facet -->
+        <polygon points="772,124 817.0,150.0 772,176 727.0,150.0" fill="#3b82f6" fill-opacity="0.09"/>
+
+        <!-- Custom razor-sharp geometric NY monogram (font-independent vector paths) -->
+        <g transform="translate(772 176)">
+          <path d="M -20 14 L -20 -14 L -4 14 L -4 -14 M 5 -14 L 13 0 L 21 -14 M 13 0 L 13 14" stroke="url(#monogram-grad)" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.50" filter="url(#soft-glow)"/>
+          <path d="M -20 14 L -20 -14 L -4 14 L -4 -14 M 5 -14 L 13 0 L 21 -14 M 13 0 L 13 14" stroke="url(#monogram-grad)" stroke-width="3.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+
+      <!-- Floating Satellite Telemetry Chips -->
+      <g transform="translate(604, 48)">
+        <rect width="112" height="24" rx="12" fill="#ffffff" fill-opacity="0.94" stroke="#38bdf8" stroke-opacity="0.42" stroke-width="1"/>
+        <circle cx="13" cy="12" r="3" fill="#38bdf8"/>
+        <text x="23" y="15.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#0f172a">FULL-STACK</text>
+      </g>
+      <g transform="translate(846, 58)">
+        <rect width="72" height="24" rx="12" fill="#ffffff" fill-opacity="0.94" stroke="#DEA584" stroke-opacity="0.42" stroke-width="1"/>
+        <circle cx="13" cy="12" r="3" fill="#DEA584"/>
+        <text x="23" y="15.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#0f172a">RUST</text>
+      </g>
+      <g transform="translate(814, 288)">
+        <rect width="108" height="24" rx="12" fill="#ffffff" fill-opacity="0.94" stroke="#fe428e" stroke-opacity="0.42" stroke-width="1"/>
+        <circle cx="13" cy="12" r="3" fill="#fe428e"/>
+        <text x="23" y="15.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#0f172a">AI AGENTS</text>
+      </g>
+    </g>
+
+    <!-- Layer 5: Specular Glass Sheen Sweep, Top/Bottom Rim Lights & Metallic Frame -->
+    <g opacity="0.95">
+      <g transform="skewX(-24)">
+        <rect x="-260" y="0" width="230" height="350" fill="url(#glass-sheen)">
+          <animateTransform attributeName="transform" type="translate" values="0 0; 1580 0; 1580 0" keyTimes="0; 0.34; 1" dur="7.5s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+
+    <!-- Polished top & bottom edge specular reflections -->
+    <rect x="64" y="0.8" width="832" height="1.8" rx="0.9" fill="url(#rim-light)"/>
+    <rect x="380" y="347.8" width="520" height="1.6" rx="0.8" fill="url(#bottom-rim)"/>
+
+    <!-- Subtle corner precision hardware brackets -->
+    <g stroke="#2563eb" stroke-opacity="0.48" stroke-width="1.3" stroke-linecap="round">
+      <path d="M 18 30 L 18 18 L 30 18"/>
+      <path d="M 930 18 L 942 18 L 942 30"/>
+      <path d="M 18 320 L 18 332 L 30 332"/>
+      <path d="M 930 332 L 942 332 L 942 320"/>
+    </g>
+  </g>
+
+  <!-- Crisp iridescent outer glass border -->
+  <rect x="0.75" y="0.75" width="958.5" height="348.5" rx="18" stroke="url(#border-grad)" stroke-width="1.35"/>
+</svg>
