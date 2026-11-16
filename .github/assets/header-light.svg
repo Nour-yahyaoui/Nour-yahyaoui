@@ -341,22 +341,22 @@
         <g class="term-line term-line-0">
         <text x="86" y="205.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#f1f5f9">Pure-Rust native apps &amp; zero-dep systems</text>
         <rect x="466" y="188.5" width="84" height="24" rx="6" fill="#ea580c" fill-opacity="0.22" stroke="#fb923c" stroke-opacity="0.55" stroke-width="1"/>
-        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#fdba74">RUSTPAD</text>
+        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.2" font-weight="700" letter-spacing="0.6" fill="#fdba74">RUSTPAD</text>
       </g>
       <g class="term-line term-line-1">
         <text x="86" y="205.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#f1f5f9">Local AI coding agents on Ollama &amp; Qwen3</text>
         <rect x="466" y="188.5" width="84" height="24" rx="6" fill="#9333ea" fill-opacity="0.22" stroke="#c084fc" stroke-opacity="0.55" stroke-width="1"/>
-        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#e9d5ff">NOUR-CODE</text>
+        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.2" font-weight="700" letter-spacing="0.6" fill="#e9d5ff">NOUR-CODE</text>
       </g>
       <g class="term-line term-line-2">
         <text x="86" y="205.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#f1f5f9">Multi-tenant platforms · Next.js &amp; NestJS</text>
         <rect x="466" y="188.5" width="84" height="24" rx="6" fill="#0891b2" fill-opacity="0.22" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1"/>
-        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#a5f3fc">AGENCYOS</text>
+        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.2" font-weight="700" letter-spacing="0.6" fill="#a5f3fc">AGENCYOS</text>
       </g>
       <g class="term-line term-line-3">
-        <text x="86" y="205.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#f1f5f9">Top Committer · Tunisia #2 · Global #101</text>
-        <rect x="466" y="188.5" width="84" height="24" rx="6" fill="#db2777" fill-opacity="0.22" stroke="#f472b6" stroke-opacity="0.55" stroke-width="1"/>
-        <text x="508" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#fbcfe8">TOP #101</text>
+        <text x="86" y="205.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#f1f5f9">Founder of the golden army org</text>
+        <rect x="430" y="188.5" width="120" height="24" rx="6" fill="#ca8a04" fill-opacity="0.22" stroke="#facc15" stroke-opacity="0.55" stroke-width="1"/>
+        <text x="490" y="204" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.2" font-weight="700" letter-spacing="0.6" fill="#fef08a">THE GOLDEN ARMY</text>
       </g>
       </g>
       <!-- Animated neon cycle progress scan bar along bottom bevel of terminal -->
