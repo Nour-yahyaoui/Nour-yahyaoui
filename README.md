@@ -9,7 +9,7 @@
 </a>
 
 <p align="center">
-  <a href="https://www.star-history.com/Nour-yahyaoui">
+  <a href="https://www.star-history.com/nour-yahyaoui">
     <img height="60" src="https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" alt="GitHub global committer ranking" />
   </a>
 </p>
