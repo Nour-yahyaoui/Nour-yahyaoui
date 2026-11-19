@@ -127,6 +127,18 @@ I started with Python and web fundamentals, then moved through JavaScript, React
 
 ---
 
+## 📦 Published Packages
+
+*Open-source tools and libraries published to **PyPI** and **npm** — zero bloat, built to solve real workflow friction.*
+
+| Package | Registry | Install | What it does | Links |
+|---|---|---|---|---|
+| 🛡️ **env-sentry** | [![PyPI](https://img.shields.io/pypi/v/env-sentry?style=flat-square&logo=pypi&logoColor=white&label=PyPI&color=3776AB)](https://pypi.org/project/env-sentry/) | `pip install env-sentry` | Zero-dependency `.env` toolkit — lints formatting, diffs environments, scans for leaked secrets, generates real secrets, and guards `.gitignore` | [PyPI](https://pypi.org/project/env-sentry/) · [Source](https://github.com/Nour-yahyaoui/env-sentry) · [Details →](projects/env-sentry/README.md) |
+| ⚡ **rusturbo** | [![npm](https://img.shields.io/npm/v/rusturbo?style=flat-square&logo=npm&logoColor=white&label=npm&color=CB3837)](https://www.npmjs.com/package/rusturbo) | `npm i -g rusturbo` | Extreme Rust compilation accelerator — fingerprints dependency graphs, reuses artifacts across projects, drives `mold`/`lld` + `sccache`, and benchmarks real builds | [npm](https://www.npmjs.com/package/rusturbo) · [Source](https://github.com/the-golden-army/Rusturbo) · [Details →](projects/rusturbo/README.md) |
+| 🌐 **bidi-kit** | [![npm](https://img.shields.io/npm/v/bidi-kit?style=flat-square&logo=npm&logoColor=white&label=npm&color=CB3837)](https://www.npmjs.com/package/bidi-kit) | `npm i bidi-kit` | Zero-dependency TypeScript/JS bidirectional text toolkit — mixes Arabic/RTL & Latin/LTR cleanly with `<bdi>` isolation, number runs, Arabic font stacks & security auditing | [npm](https://www.npmjs.com/package/bidi-kit) · [Source](https://github.com/Nour-yahyaoui/ui-storm/tree/main/packages/bidi-kit) · [Details →](projects/bidi-kit/README.md) |
+
+---
+
 ## 🧰 Tech Stack
 
 ### 🖥️ Frontend
