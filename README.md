@@ -1,163 +1,72 @@
-<div align="center">
-
-<a href="https://nour-yahyaoui.vercel.app">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/header-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset=".github/assets/header-light.svg" />
-    <img width="100%" src=".github/assets/header-dark.svg" alt="Nour Yahyaoui — Full-Stack & AI Systems Engineer" />
-  </picture>
-</a>
+<h1 align="center">Nour Yahyaoui</h1>
 
 <p align="center">
-  <a href="https://www.star-history.com/nour-yahyaoui">
-    <img height="60" src="https://api.star-history.com/badge?user=Nour-yahyaoui&year=2026" alt="GitHub global committer ranking" />
-  </a>
+  Full-stack developer from Tunisia · Rust (Actix Web) · Next.js · PostgreSQL
+  <br/>
+  3 years of freelance and client work · Open to freelance and collaboration
 </p>
 
 <p align="center">
-  <a href="https://user-badge.committers.top/tunisia/Nour-yahyaoui">
-    <img height="22" src="https://user-badge.committers.top/tunisia/Nour-yahyaoui.svg" alt="Top committer ranking in Tunisia" />
-  </a>
-  &nbsp;
-  <img height="22" src="https://img.shields.io/badge/Open_to-Freelance_%26_Collab-2EA44F?style=flat-square&labelColor=0d1117" alt="Open to freelance and collaboration" />
-  &nbsp;
-  <img height="22" src="https://img.shields.io/badge/Building_with-Rust-DEA584?style=flat-square&labelColor=0d1117&logo=rust&logoColor=DEA584" alt="Building with Rust" />
-  &nbsp;
-  <a href="https://nour-yahyaoui.vercel.app">
-    <img height="22" src="https://img.shields.io/badge/Portfolio-Live-7C3AED?style=flat-square&labelColor=0d1117&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
+  <a href="https://nour-yahyaoui.vercel.app">Portfolio</a> ·
+  <a href="https://www.linkedin.com/in/nour-yahyaoui-86987b36b">LinkedIn</a> ·
+  <a href="https://agencyos-web-beryl.vercel.app">AgencyOS demo</a>
 </p>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/divider-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset=".github/assets/divider-light.svg" />
-  <img width="100%" src=".github/assets/divider-dark.svg" alt="" />
-</picture>
-
-</div>
-
-## 👨‍💻 About Me
-
-> *"AI power with the perfect leadership."*
-
-🎓 I'm a **19-year-old full-stack developer from Tunisia** with **3 years of freelance and client experience**. I craft beautiful, secure and scalable applications — from web and mobile to desktop — turning complex problems into elegant solutions.
-
-I started with Python and web fundamentals, then moved through JavaScript, React, Next.js, React Native and serverless architectures. Today I build production apps end to end — frontend, backend and deployment — and I'm going deeper into **Rust (Actix Web / Axum and native systems)** for performance-critical services and desktop software.
-
-**Lately that means shipping full-stack platforms and building my own tooling from scratch:**
-
-- 🦀 **RustPad** — a zero-dependency pure-Rust desktop Word & PDF studio, compiled to a single 4.96 MB executable
-- 🏢 **AgencyOS** — a multi-tenant agency operations platform with a scoped client portal, Kanban delivery and Stripe billing
-- 🤖 **nour-code** — a local AI coding agent running Qwen3 8B on Ollama, with permission-checked access to real tools
-
-📌 The pinned repos below are the real signal — what I actually build beats any project count.
 
 ---
 
-## 🚀 Featured Projects
+## About
 
-<p align="center">
-  <sub>Each card links to its repository. Themes follow your light/dark preference.</sub>
-</p>
+I build web, desktop and tooling projects end to end: frontend, backend, database and deployment. I started with Python and the web, moved through React, Next.js and serverless, and now go deeper into **Rust** for fast, secure backends and native software.
 
-<p align="center">
-  <a href="https://github.com/Nour-yahyaoui/rustpad">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/rustpad-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/rustpad-light.svg" />
-      <img src=".github/assets/cards/rustpad-dark.svg" width="410" alt="RustPad — native desktop Word and PDF studio written in pure Rust" />
-    </picture>
-  </a>
-  <a href="https://github.com/Nour-yahyaoui/vexos">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/vexos-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/vexos-light.svg" />
-      <img src=".github/assets/cards/vexos-dark.svg" width="410" alt="VexOS — live Debian-based Linux desktop with a browser IDE" />
-    </picture>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Nour-yahyaoui/nour-code">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/nour-code-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/nour-code-light.svg" />
-      <img src=".github/assets/cards/nour-code-dark.svg" width="410" alt="nour-code — local AI coding agent on Ollama" />
-    </picture>
-  </a>
-  <a href="https://github.com/Nour-yahyaoui/agencyos">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/agencyos-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/agencyos-light.svg" />
-      <img src=".github/assets/cards/agencyos-dark.svg" width="410" alt="AgencyOS — multi-tenant operations platform for digital agencies" />
-    </picture>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Nour-yahyaoui/matjari-web">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/matjari-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/matjari-light.svg" />
-      <img src=".github/assets/cards/matjari-dark.svg" width="410" alt="Matjari — point of sale and inventory system for small shops" />
-    </picture>
-  </a>
-  <a href="https://github.com/Nour-yahyaoui/env-sentry">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/cards/env-sentry-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset=".github/assets/cards/env-sentry-light.svg" />
-      <img src=".github/assets/cards/env-sentry-dark.svg" width="410" alt="env-sentry — zero-dependency CLI that catches .env drift and leaked secrets" />
-    </picture>
-  </a>
-</p>
-
-<details>
-<summary>📋 Prefer plain text? Same projects as a table</summary>
-
-| Project | What it is | Stack | Full README |
-|---------|-----------|-------|-------------|
-| 🦀 **RustPad** | Native desktop Word (`.docx`) & vector PDF (`.pdf`) studio — 4.96 MB, zero `crates.io` deps | Rust, Win32/X11 | [Read full →](projects/rustpad/README.md) |
-| 🖥️ **VexOS Desktop** | Live Linux desktop (Debian) with browser-based IDE, Run button, live preview, AI assistant | Debian, XFCE, Rust, Python, Node | [Read full →](projects/vexos/README.md) |
-| 🤖 **nour-code** | Local AI coding agent — Qwen3 8B on Ollama, FastAPI, permission-checked tool access | Python, FastAPI, Ollama, Qwen | [Read full →](projects/nour-code/README.md) |
-| 🏢 **AgencyOS** | Multi-tenant operations platform for digital agencies — clients, Kanban delivery, client portal, support, documents, Stripe billing | Next.js, NestJS, PostgreSQL, Prisma | [Read full →](projects/agencyos/README.md) |
-| 🛒 **Matjari** | Full POS system for small/medium shops — sales, stock, orders, debts, employees | React, Vite, JavaScript | [Read full →](projects/matjari/README.md) |
-| 🛡️ **env-sentry** | Zero-dependency Python CLI — catches `.env` drift, leaked secrets, missing `.gitignore` entries | Python | [Read full →](projects/env-sentry/README.md) |
-
-</details>
+**Right now:** writing production-grade Actix Web servers (REST routes, auth, rate limiting, caching) and shipping side projects in public.
 
 ---
 
-## 📦 Published Packages
+## Featured projects
 
-*Open-source tools and libraries published to **PyPI** and **npm** — zero bloat, built to solve real workflow friction.*
-
-| Package | Registry | Install | What it does | Links |
-|---|---|---|---|---|
-| 🛡️ **env-sentry** | [![PyPI](https://img.shields.io/pypi/v/env-sentry?style=flat-square&logo=pypi&logoColor=white&label=PyPI&color=3776AB)](https://pypi.org/project/env-sentry/) | `pip install env-sentry` | Zero-dependency `.env` toolkit — lints formatting, diffs environments, scans for leaked secrets, generates real secrets, and guards `.gitignore` | [PyPI](https://pypi.org/project/env-sentry/) · [Source](https://github.com/Nour-yahyaoui/env-sentry) · [Details →](projects/env-sentry/README.md) |
-| ⚡ **rusturbo** | [![npm](https://img.shields.io/npm/v/rusturbo?style=flat-square&logo=npm&logoColor=white&label=npm&color=CB3837)](https://www.npmjs.com/package/rusturbo) | `npm i -g rusturbo` | Extreme Rust compilation accelerator — fingerprints dependency graphs, reuses artifacts across projects, drives `mold`/`lld` + `sccache`, and benchmarks real builds | [npm](https://www.npmjs.com/package/rusturbo) · [Source](https://github.com/the-golden-army/Rusturbo) · [Details →](projects/rusturbo/README.md) |
-| 🌐 **bidi-kit** | [![npm](https://img.shields.io/npm/v/bidi-kit?style=flat-square&logo=npm&logoColor=white&label=npm&color=CB3837)](https://www.npmjs.com/package/bidi-kit) | `npm i bidi-kit` | Zero-dependency TypeScript/JS bidirectional text toolkit — mixes Arabic/RTL & Latin/LTR cleanly with `<bdi>` isolation, number runs, Arabic font stacks & security auditing | [npm](https://www.npmjs.com/package/bidi-kit) · [Source](https://github.com/Nour-yahyaoui/ui-storm/tree/main/packages/bidi-kit) · [Details →](projects/bidi-kit/README.md) |
+| Project | What it does | Stack |
+| --- | --- | --- |
+| [**RustPad**](https://github.com/Nour-yahyaoui/rustpad) | Native desktop Word (`.docx`) and vector PDF studio. Single 4.96 MB executable, zero `crates.io` dependencies. | Rust, Win32/X11 |
+| [**AgencyOS**](https://github.com/Nour-yahyaoui/agencyos) | Multi-tenant platform for agencies: clients, Kanban delivery, scoped client portal, support, documents, Stripe billing. | Next.js, NestJS, PostgreSQL, Prisma |
+| [**nour-code**](https://github.com/Nour-yahyaoui/nour-code) | Local AI coding agent running Qwen3 8B on Ollama, with permission-checked tool access. | Python, FastAPI, Ollama |
+| [**VexOS**](https://github.com/Nour-yahyaoui/vexos) | Live Debian-based Linux desktop with a browser IDE, run button, live preview and AI assistant. | Debian, XFCE, Rust, Node |
+| [**Matjari**](https://github.com/Nour-yahyaoui/matjari-web) | Point of sale and inventory system for small shops: sales, stock, orders, debts, employees. | React, Vite |
 
 ---
 
-## 🧰 Tech Stack
+## Published packages
 
-### 🖥️ Frontend
-*Building responsive, interactive UIs with modern frameworks*
+| Package | Install | What it does |
+| --- | --- | --- |
+| [**env-sentry**](https://pypi.org/project/env-sentry/) | `pip install env-sentry` | Zero-dependency CLI that catches `.env` drift, leaked secrets and missing `.gitignore` entries. |
+| [**rusturbo**](https://www.npmjs.com/package/rusturbo) | `npm i -g rusturbo` | Rust compilation accelerator: reuses build artifacts, drives `mold`/`lld` + `sccache`, benchmarks real builds. |
+| [**bidi-kit**](https://www.npmjs.com/package/bidi-kit) | `npm i bidi-kit` | Zero-dependency toolkit for mixing Arabic/RTL and Latin/LTR text cleanly in TypeScript/JS. |
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+---
 
-### ⚙️ Backend
-*Scalable serverless APIs and database architecture*
+## Tech stack
 
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+**Languages:** Rust · TypeScript · JavaScript · Python
+**Frontend:** React · Next.js · Tailwind CSS · React Native (Expo)
+**Backend:** Actix Web · NestJS · Node.js · FastAPI · REST · WebSocket
+**Data:** PostgreSQL · Prisma · Neon · Redis
+**Tools:** Git · Docker · Vercel · Render · Ollama
+
+---
+
+## Stats
+
+<p align="center">
+  <img height="170" src="https://github.com/Nour-yahyaoui/Nour-yahyaoui/raw/main/.github/assets/stats.svg" alt="GitHub stats" />
+  <img height="170" src="https://github.com/Nour-yahyaoui/Nour-yahyaoui/raw/main/.github/assets/top-langs.svg" alt="Most used languages" />
+</p>
+
+---
+
+<p align="center">
+  Let's build something. <a href="https://nour-yahyaoui.vercel.app">Get in touch →</a>
+</p>
+st](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![Actix Web](https://img.shields.io/badge/Actix_Web-000000?style=for-the-badge&logo=rust&logoColor=DEA584)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
