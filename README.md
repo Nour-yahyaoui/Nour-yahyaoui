@@ -47,10 +47,14 @@ I build web, desktop and tooling projects end to end: frontend, backend, databas
 ## Tech stack
 
 **Languages:** Rust · TypeScript · JavaScript · Python
-**Frontend:** React · Next.js · Tailwind CSS · React Native (Expo)
+
+**Frontend:** React · Next.js · Tailwind CSS · React Native (Expo) · dioxus
+
 **Backend:** Actix Web · NestJS · Node.js · FastAPI · REST · WebSocket
+
 **Data:** PostgreSQL · Prisma · Neon · Redis
-**Tools:** Git · Vercel · Render · Ollama
+
+**Tools:** Git · Vercel · Render · Ollama · docker
 
 ---
 
