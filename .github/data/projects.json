@@ -32,7 +32,7 @@
       "blurb": "Local AI coding agent — Qwen3 8B on Ollama behind FastAPI, with permission-checked access to files and shell.",
       "language": "Python",
       "stars": 4,
-      "updated": "2026-10-21"
+      "updated": "2026-11-21"
     },
     {
       "key": "matjari",
@@ -54,7 +54,7 @@
       "blurb": "Multi-tenant agency operations platform — clients, Kanban delivery, client portal, documents and Stripe billing.",
       "language": "TypeScript",
       "stars": 4,
-      "updated": "2026-11-16"
+      "updated": "2026-11-23"
     },
     {
       "key": "env-sentry",
