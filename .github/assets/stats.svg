@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Nour-Yahyaoui's GitHub Stats, Rank: A+</title>
-        <desc id="descId">Total Stars Earned: 278, Total Commits  (2026) : 18986, Total PRs: 161, Total Issues: 1552, Contributed to (last year): 10</desc>
+        <desc id="descId">Total Stars Earned: 283, Total Commits  (2026) : 19131, Total PRs: 204, Total Issues: 1569, Contributed to (last year): 15</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 19.69757790942436;
+        stroke-dashoffset: 16.47896319506633;
       }
     }
   
@@ -162,7 +162,7 @@
         x="219.01"
         y="12.5"
         data-testid="stars"
-      >278</text>
+      >283</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -177,7 +177,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >19k</text>
+      >19.1k</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -192,7 +192,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >161</text>
+      >204</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -222,7 +222,7 @@
         x="219.01"
         y="12.5"
         data-testid="contribs"
-      >10</text>
+      >15</text>
     </g>
   </g>
     </svg>
