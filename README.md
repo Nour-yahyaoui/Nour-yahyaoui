@@ -61,7 +61,6 @@ I build web, desktop and tooling projects end to end: frontend, backend, databas
 ## Stats
 
 <p align="center">
-  <img height="170" src="https://github.com/Nour-yahyaoui/Nour-yahyaoui/raw/main/.github/assets/stats.svg" alt="GitHub stats" />
   <img height="170" src="https://github.com/Nour-yahyaoui/Nour-yahyaoui/raw/main/.github/assets/top-langs.svg" alt="Most used languages" />
 </p>
 
