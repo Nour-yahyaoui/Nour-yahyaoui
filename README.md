@@ -26,6 +26,7 @@ I build web, desktop and tooling projects end to end: frontend, backend, databas
 
 | Project | What it does | Stack |
 | --- | --- | --- |
+| [**Actix Icons**](https://github.com/Nour-yahyaoui/actix-icons) | Multi-platform icon ecosystem: 2,144 SVG icons with a dependency-free Rust crate (`no_std`, compile-time embedded), a JS/TypeScript package, CDN-ready SVGs and a searchable gallery. | Rust, TypeScript, Node |
 | [**RustPad**](https://github.com/Nour-yahyaoui/rustpad) | Native desktop Word (`.docx`) and vector PDF studio. Single 4.96 MB executable, zero `crates.io` dependencies. | Rust, Win32/X11 |
 | [**AgencyOS**](https://github.com/Nour-yahyaoui/agencyos) | Multi-tenant platform for agencies: clients, Kanban delivery, scoped client portal, support, documents, Stripe billing. | Next.js, NestJS, PostgreSQL, Prisma |
 | [**nour-code**](https://github.com/Nour-yahyaoui/nour-code) | Local AI coding agent running Qwen3 8B on Ollama, with permission-checked tool access. | Python, FastAPI, Ollama |
