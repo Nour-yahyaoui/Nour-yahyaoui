@@ -26,7 +26,6 @@ I build web, desktop and tooling projects end to end: frontend, backend, databas
 
 | Project | What it does | Stack |
 | --- | --- | --- |
-| [**Actix Icons**](https://github.com/Nour-yahyaoui/actix-icons) | Multi-platform icon ecosystem: 2,144 SVG icons with a dependency-free Rust crate (`no_std`, compile-time embedded), a JS/TypeScript package, CDN-ready SVGs and a searchable gallery. | Rust, TypeScript, Node |
 | [**RustPad**](https://github.com/Nour-yahyaoui/rustpad) | Native desktop Word (`.docx`) and vector PDF studio. Single 4.96 MB executable, zero `crates.io` dependencies. | Rust, Win32/X11 |
 | [**AgencyOS**](https://github.com/Nour-yahyaoui/agencyos) | Multi-tenant platform for agencies: clients, Kanban delivery, scoped client portal, support, documents, Stripe billing. | Next.js, NestJS, PostgreSQL, Prisma |
 | [**nour-code**](https://github.com/Nour-yahyaoui/nour-code) | Local AI coding agent running Qwen3 8B on Ollama, with permission-checked tool access. | Python, FastAPI, Ollama |
@@ -39,6 +38,7 @@ I build web, desktop and tooling projects end to end: frontend, backend, databas
 
 | Package | Install | What it does |
 | --- | --- | --- |
+| [**actix-icons**](https://crates.io/crates/actix-icons) | `cargo add actix-icons` · `npm i actix-icons` | 2,144 consistent SVG icons compiled into your program: zero-dependency, `no_std` Rust crate plus a JS/TS package, with CDN-ready SVGs and a searchable gallery. |
 | [**env-sentry**](https://pypi.org/project/env-sentry/) | `pip install env-sentry` | Zero-dependency CLI that catches `.env` drift, leaked secrets and missing `.gitignore` entries. |
 | [**rusturbo**](https://www.npmjs.com/package/rusturbo) | `npm i -g rusturbo` | Rust compilation accelerator: reuses build artifacts, drives `mold`/`lld` + `sccache`, benchmarks real builds. |
 | [**bidi-kit**](https://www.npmjs.com/package/bidi-kit) | `npm i bidi-kit` | Zero-dependency toolkit for mixing Arabic/RTL and Latin/LTR text cleanly in TypeScript/JS. |
